@@ -37,12 +37,14 @@ export default Route.extend(ApplicationRouteMixin, ShortcutsRoute, {
     settings: service(),
     tour: service(),
     ui: service(),
+    intl: service(),
 
     shortcuts,
 
     routeAfterAuthentication: 'posts',
 
     beforeModel() {
+        this.intl.setLocale(['vi-vn', 'en-us']);
         return this.get('config').fetch();
     },
 
