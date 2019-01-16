@@ -88,7 +88,7 @@
 
         <div class="absolute flex items-center br3 bg-white {{if editor.headerClass "right-4 bottom-4" "right-6 bottom-6"}}">
             <div class="midgrey-l2 {{if editor.headerClass "f-supersmall pl2 pr2" "f8 pl4 pr3"}} fw3">
-                {{pluralize wordCount.wordCount "word"}}
+                {{pluralize wordCount.wordCount (t "word")}}
             </div>
             <a href="https://help.ghost.org/article/29-ghost-editor-overview" class="flex {{if editor.headerClass "pa2" "pa3"}}" target="_blank">{{svg-jar "help" class="w4 h4 stroke-midgrey-l2"}}</a>
         </div>
