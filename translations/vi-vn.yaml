@@ -1,9 +1,20 @@
 Your stories: Bài viết của bạn
+You haven't written any stories yet!: Bạn chưa có bài viết nào!
+No stories match the current filter: Không tìm thấy bài viết nào
+Show all stories: Hiển thị toàn bộ bài viết
+Write a new Story: Viết bài mới
 Sort by: Sắp sếp
 New story: Bài viết mới
-Newest: mới nhất 
-Oldest: cũ nhất 
-Recently updated: mới cập nhật  
+Newest: Mới nhất
+Oldest: Cũ nhất
+Recently updated: Mới cập nhật
+Draft posts: Bài viết nháp
+Published posts: Bài viết đã đăng
+Scheduled posts: Bài viết theo lịch
+Featured posts: Bài viết nổi bật
+Pages: Trang
+Search tags: Tìm kiếm tag
+Search authors: Tìm kiếm tác giả
 All posts: Tất cả bài viết
 All authors:  Tất cả tác giả 
 All tags: Tất cả thẻ
@@ -23,3 +34,96 @@ Team: Người dùng
 Content: Nội dung
 Sign Out: Đăng xuất 
 Cancel: Hủy
+Post will go live: Bài viết sẽ được công bố vào
+Got it: Đã hiểu
+Story Title: Tiêu đề bài biết
+Begin writing your story...: Bắt đầu bài viết của bạn...
+
+More: Thêm
+Post Settings: Tùy chỉnh bài viết
+Close: Đóng
+Upload post image: Tải ảnh lên
+Post URL: Đường dẫn URL
+View post: Xem bài
+Preview: Xem trước
+Publish Date: Ngày đăng
+Scheduled Date: Lịch hẹn
+Use the publish menu to re-schedule: Use the publish menu to re-schedule
+Authors: Tác giả
+Meta Data: Meta Data
+Extra content for search engines: Thông tin bổ sung để tìm kiếm
+Twitter Card: Thẻ Twitter
+Customise structured data for Twitter: Tùy chỉnh cấu trúc dữ liệu cho Twitter
+Facebook Card: Thẻ Facebook
+Customise Open Graph data: Customise Open Graph data
+Code Injection: Mã nhúng
+Add styles/scripts to the header &amp; footer: Add styles/scripts to the header &amp; footer
+Turn this post into a page: Turn this post into a page
+Feature this post: Feature this post
+Delete Post: Xóa bài
+Back: Quay lại
+Meta Title: Meta Title
+Recommended: Gợi ý
+characters. You’ve used: kí tự. Bạn đã sử dụng
+Meta Description: Meta Description
+Search Engine Result Preview: Xem trước kết quả tìm kiếm
+Add Twitter image: Thêm ảnh trên Twitter
+Twitter Title: Tiêu đề trên Twitter
+Twitter Description: Mô tả trên Twitter
+Add Facebook image: Thêm ảnh trên Facebook
+Facebook Title: Tiêu đề trên Facebook
+Facebook Description: Mô tả trên Facebook
+Post Header: Đầu trang (Header)
+Post Footer: Chân trang (Footer)
+
+Edit this post: Edit this post
+Page: Page
+Scheduled: Scheduled
+Draft: Draft
+Featured: Featured
+Will go live: Will go live
+Last edited: Last edited
+Ready to publish your post?: Ready to publish your post?
+Set it live now: Set it live now
+Publish this post immediately: Publish this post immediately
+Schedule it for later: Schedule it for later
+Set automatic future publish date: Set automatic future publish date
+Update post status: Update post status
+Unpublished: Unpublished
+Revert this post to a private draft: Revert this post to a private draft
+Display this post publicly: Display this post publicly
+Save settings: Save settings
+Publication info: Publication info
+Title: Tiêu đề
+description: mô tả
+The details used to identify your publication around the web: The details used to identify your publication around the web
+The name of your site: The name of your site
+Used in your theme, meta data and search results: Used in your theme, meta data and search results
+Expand: Expand
+Site timezone: Site timezone
+Set the time and date of your publication, used for all published posts: Set the time and date of your publication, used for all published posts
+Publication Language: Publication Language
+Set the language/locale which is used on your site: Set the language/locale which is used on your site
+Excerpt: Excerpt
+Default: Mặc định
+English: English
+you can add translation files to your theme for: you can add translation files to your theme for
+any language: any language
+Publication identity: Publication identity
+Publication icon: Publication icon
+A square, social icon used in the UI of your publication, at least 60x60px: A square, social icon used in the UI of your publication, at least 60x60px
+delete: delete
+Upload Image: Upload Image
+Publication logo: Publication logo
+The primary logo for your brand displayed across your theme, should be transparent and at least 600px x 72px: The primary logo for your brand displayed across your theme, should be transparent and at least 600px x 72px
+Publication cover: Publication cover
+An optional large background image for your site: An optional large background image for your site
+Social accounts: Social accounts
+Link your social accounts for full structured data and rich card support: Link your social accounts for full structured data and rich card support
+URL of your publication's Facebook Page: URL of your publication's Facebook Page
+URL of your publication's Twitter profile: URL of your publication's Twitter profile
+Advanced settings: Advanced settings
+Make this site private: Make this site private
+Enable protection with simple shared password. All search engine optimization and social features will be disabled.: Enable protection with simple shared password. All search engine optimization and social features will be disabled.
+A private RSS feed is available at: A private RSS feed is available at
+Set the password for this site: Set the password for this site
