@@ -10,7 +10,7 @@
                     <div class="{{ui-text "ts"}} h9 br b--lightgrey pl3 pr4 flex items-center br2 br--left {{unless infoMessage "bg-white"}}">
                         {{#link-to "posts" classNames="blue link fw4 flex items-center" data-test-link="stories"}}
                             {{svg-jar "arrow-left" class="w3 fill-blue mr1 nudge-right--2"}}
-                            Stories
+                            {{t "Stories"}}
                         {{/link-to}}
                     </div>
                 {{/if}}
@@ -23,7 +23,7 @@
                     </span>
                 {{#gh-scheduled-post-countdown post=post as |post countdown|}}
                     <time datetime="{{post.publishedAtUTC}}" class="green f8 ml5" data-test-schedule-countdown>
-                        Post will go live {{countdown}}.
+                        {{t "Post will go live"}} {{countdown}}.
                     </time>
                 {{/gh-scheduled-post-countdown}}
                 </div>
@@ -35,7 +35,7 @@
                     {{svg-jar "idea" class="w7 h7 fill-blue"}}
                     <p class="ma0 pa0 ml1 nudge-top--2">
                         {{infoMessage}}
-                        <button type="button" class="blue fw5" {{action (mut infoMessage "")}}>Got it</button>
+                        <button type="button" class="blue fw5" {{action (mut infoMessage "")}}>{{t "Got it"}}</button>
                     </p>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                     {{/if}}
                 {{/unless}}
 
-                <button type="button" class="post-settings" title="Settings" {{action "openSettingsMenu" target=ui}} data-test-psm-trigger>
+                <button type="button" class="post-settings" title={{t "Settings"}} {{action "openSettingsMenu" target=ui}} data-test-psm-trigger>
                     {{svg-jar "settings"}}
                 </button>
             </section>
@@ -71,11 +71,11 @@
         --}}
         {{gh-koenig-editor
             title=(readonly post.titleScratch)
-            titlePlaceholder="Story Title"
+            titlePlaceholder=(t "Story Title")
             onTitleChange=(action "updateTitleScratch")
             onTitleBlur=(action (perform saveTitle))
             body=(readonly post.scratch)
-            bodyPlaceholder="Begin writing your story..."
+            bodyPlaceholder=(t "Begin writing your story...")
             bodyAutofocus=shouldFocusEditor
             onBodyChange=(action "updateScratch")
             headerOffset=editor.headerHeight
