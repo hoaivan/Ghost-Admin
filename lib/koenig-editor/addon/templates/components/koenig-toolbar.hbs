@@ -2,7 +2,7 @@
     <li class="ma0 lh-solid">
         <button
             type="button"
-            title="Bold"
+            title="Bôi đậm"
             class="dib dim-lite link h10 w9 nudge-top--1"
             {{action "toggleMarkup" "strong"}}
         >
@@ -12,7 +12,7 @@
     <li class="ma0 lh-solid">
         <button
             type="button"
-            title="Italic"
+            title="In nghiêng"
             class="dib dim-lite link h10 w9 nudge-top--1"
             {{action "toggleMarkup" "em"}}
         >
@@ -23,7 +23,7 @@
         <li class="ma0 lh-solid">
             <button
                 type="button"
-                title="Heading One"
+                title="Tiêu đề  cấp 1"
                 class="dib dim-lite link h10 w9 nudge-top--1"
                 {{action "toggleHeaderSection" "h2"}}
             >
@@ -33,7 +33,7 @@
         <li class="ma0 lh-solid">
             <button
                 type="button"
-                title="Heading Two"
+                title="Tiêu đề cấp 2"
                 class="dib dim-lite link h10 w9 nudge-top--1"
                 {{action "toggleHeaderSection" "h3"}}
             >
@@ -48,7 +48,7 @@
         <li class="ma0 lh-solid">
             <button
                 type="button"
-                title="Quote"
+                title="Trích dẫn"
                 class="dib dim-lite link h10 w9 nudge-top--1"
                 {{action "toggleSection" "blockquote"}}
             >
@@ -59,11 +59,31 @@
     <li class="ma0 lh-solid">
         <button
             type="button"
-            title="Link"
+            title="Liên kết"
             class="dib dim-lite link h10 w9 nudge-top--1"
             {{action "editLink"}}
         >
             {{svg-jar "koenig/kg-link" class=(concat (if activeMarkupTagNames.isA "fill-blue-l2" "fill-white") " w4 h4")}}
+        </button>
+    <!-- </li>
+        <li class="ma0 lh-solid">
+        <button
+            type="button"
+            title="Căn giữa"
+            class="dib dim-lite link h10 w9 nudge-top--1"
+            {{action "toggleMarkup" "center"}}
+        >
+            {{svg-jar "koenig/kg-center" class=(concat (if activeMarkupTagNames.isStrong "fill-blue-l2" "fill-white") " w4 h4")}}
+        </button>
+    </li> -->
+    <li class="ma0 lh-solid">
+        <button
+            type="button"
+            title="Gạch chân"
+            class="dib dim-lite link h10 w9 nudge-top--1"
+            {{action "toggleMarkup" "u"}}
+        >
+            {{svg-jar "koenig/kg-underline" class=(concat (if activeMarkupTagNames.isStrong "fill-blue-l2" "fill-white") " w4 h4")}}
         </button>
     </li>
 </ul>

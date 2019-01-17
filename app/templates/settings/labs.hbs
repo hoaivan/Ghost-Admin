@@ -82,15 +82,17 @@
         </div>
 
         <div class="gh-setting-header">{{t "Beta features"}}</div>
-        <div class="gh-setting">
-            <div class="gh-setting-content">
-                <div class="gh-setting-title">{{t "Public API"}}</div>
-                <div class="gh-setting-desc">{{t "For full instructions, read the"}} <a href="https://help.ghost.org/hc/en-us/articles/115000301672-Public-API-Beta">{{t "developer guide"}}</a></div>
+        {{#if (not-eq feature.labs.publicAPI undefined)}}
+            <div class="gh-setting">
+                <div class="gh-setting-content">
+                    <div class="gh-setting-title">{{t "Public API"}} ({{t "deprecated"}})</div>
+                    <div class="gh-setting-desc">⚠️ Please use the Content API instead, {{t "For full instructions, read the"}} <a href="https://docs.ghost.org/api/content/">{{t "the docs"}}</a></div>
+                </div>
+                <div class="gh-setting-action">
+                    <div class="for-checkbox">{{gh-feature-flag "publicAPI"}}</div>
+                </div>
             </div>
-            <div class="gh-setting-action">
-                <div class="for-checkbox">{{gh-feature-flag "publicAPI"}}</div>
-            </div>
-        </div>
+        {{/if}}
         <div class="gh-setting">
             <div class="gh-setting-content">
                 <div class="gh-setting-title">{{t "Night shift"}}</div>
@@ -103,7 +105,7 @@
         <div class="gh-setting">
             <div class="gh-setting-content">
                 <div class="gh-setting-title">{{t "Subscribers"}}</div>
-                <div class="gh-setting-desc">{{t "Collect email addresses from your readers, more info in"}} <a href="https://help.ghost.org/hc/en-us/articles/224089787-Subscribers-Beta">{{t "the docs"}}</a></div>
+                <div class="gh-setting-desc">{{t "Collect email addresses from your readers, more info in"}} <a href="https://docs.ghost.org/api/content/">{{t "the docs"}}</a></div>
             </div>
             <div class="gh-setting-action">
                 <div class="for-checkbox">{{gh-feature-flag "subscribers"}}</div>
@@ -120,7 +122,7 @@
             }}
             <div class="gh-setting-content">
                 <div class="gh-setting-title">{{t "Redirects"}}</div>
-                <div class="gh-setting-desc">{{t "Configure redirects for old or moved content, more info in"}} <a href="https://docs.ghost.org/docs/redirects">{{t "the docs"}}</a></div>
+                <div class="gh-setting-desc">{{t "Configure redirects for old or moved content, more info in"}} <a href="https://docs.ghost.org/tutorials/implementing-redirects/">{{t "the docs"}}</a></div>
                 {{#each uploader.errors as |error|}}
                     <div class="gh-setting-error" data-test-error="redirects">{{error.message}}</div>
                 {{/each}}
