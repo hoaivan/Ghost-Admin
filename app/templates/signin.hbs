@@ -41,7 +41,7 @@
                             failureClass=""
                             as |task|
                         }}
-                            <span>{{#if task.isRunning}}{{svg-jar "spinner" class="gh-spinner"}}{{else}}Forgot?{{/if}}</span>
+                            <span>{{#if task.isRunning}}{{svg-jar "spinner" class="gh-spinner"}}{{else}}{{t "Forgot"}}?{{/if}}</span>
                         {{/gh-task-button}}
                     </span>
                 {{/gh-form-group}}

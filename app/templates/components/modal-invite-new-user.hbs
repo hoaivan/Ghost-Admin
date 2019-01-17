@@ -1,7 +1,7 @@
 <header class="modal-header">
     <h1>{{t "Invite a New User"}}</h1>
 </header>
-<a class="close" href="" title="Close" {{action "closeModal"}}>{{svg-jar "close"}}<span class="hidden">{{t "Close"}}</span></a>
+<a class="close" href="" title={{t "Close"}} {{action "closeModal"}}>{{svg-jar "close"}}<span class="hidden">{{t "Close"}}</span></a>
 
 <div class="modal-body">
     <fieldset>
@@ -47,8 +47,8 @@
 </div>
 
 <div class="modal-footer">
-    {{gh-task-button (t "Send invitation now")
-        successText=(t "Sent")
+    {{gh-task-button "Send invitation now"
+        successText="Sent"
         task=sendInvitation
         class="gh-btn gh-btn-green gh-btn-icon"
         disabled=fetchRoles.isRunning}}

@@ -1,86 +1,86 @@
 <header class="modal-header">
-    <h1>Markdown Help</h1>
+    <h1>{{t "Markdown Help"}}</h1>
 </header>
-<a class="close" href="" title="Close" {{action "closeModal"}}>{{svg-jar "close"}}<span class="hidden">Close</span></a>
+<a class="close" href="" title={{t "Close"}} {{action "closeModal"}}>{{svg-jar "close"}}<span class="hidden">{{t "Close"}}</span></a>
 
 <div class="modal-body">
     <section class="markdown-help-container">
         <table class="modal-markdown-help-table">
             <thead>
             <tr>
-                <th>Markdown</th>
-                <th>Result</th>
-                <th>Shortcut</th>
+                <th>{{t "Markdown"}}</th>
+                <th>{{t "Result"}}</th>
+                <th>{{t "Shortcut"}}</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td>**text**</td>
-                <td><strong>Bold</strong></td>
+                <td>**{{t "text"}}**</td>
+                <td><strong>{{t "Bold"}}</strong></td>
                 <td>Ctrl/⌘ + B</td>
             </tr>
             <tr>
-                <td>*text*</td>
-                <td><em>Emphasize</em></td>
+                <td>*{{t "text"}}*</td>
+                <td><em>{{t "Emphasize"}}</em></td>
                 <td>Ctrl/⌘ + I</td>
             </tr>
             <tr>
-                <td>~~text~~</td>
-                <td><del>Strike-through</del></td>
+                <td>~~{{t "text"}}~~</td>
+                <td><del>{{t "Strike-through"}}</del></td>
                 <td></td>
             </tr>
             <tr>
-                <td>[title](http://)</td>
-                <td><a href="#">Link</a></td>
+                <td>[{{t "title"}}](http://)</td>
+                <td><a href="#">{{t "Link"}}</a></td>
                 <td>Ctrl/⌘ + K</td>
             </tr>
             <tr>
                 <td>`code`</td>
-                <td><code>Inline Code</code></td>
+                <td><code>{{t "Inline Code"}}</code></td>
                 <td>Ctrl/⌘ + Alt + C</td>
             </tr>
             <tr>
                 <td>![alt](http://)</td>
-                <td>Image</td>
+                <td>{{t "Image"}}</td>
                 <td>Ctrl/⌘ + Shift + I</td>
             </tr>
             <tr>
-                <td>* item</td>
-                <td>List</td>
+                <td>* {{t "item"}}</td>
+                <td>{{t "List"}}</td>
                 <td>Ctrl/⌘ + L</td>
             </tr>
             <tr>
-                <td>1. item</td>
-                <td>Ordered List</td>
+                <td>1. {{t "item"}}</td>
+                <td>{{t "Ordered List"}}</td>
                 <td>Ctrl/⌘ + Alt + L</td>
             </tr>
             <tr>
-                <td>> quote</td>
-                <td>Blockquote</td>
+                <td>> {{t "quote"}}</td>
+                <td>{{t "Blockquote"}}</td>
                 <td>Ctrl/⌘ + '</td>
             </tr>
             <tr>
-                <td>==Highlight==</td>
-                <td><mark>Highlight</mark></td>
+                <td>=={{t "Highlight"}}==</td>
+                <td><mark>{{t "Highlight"}}</mark></td>
                 <td></td>
             </tr>
             <tr>
-                <td># Heading</td>
+                <td># {{t "Heading"}}</td>
                 <td>H1</td>
                 <td></td>
             </tr>
             <tr>
-                <td>## Heading</td>
+                <td>## {{t "Heading"}}</td>
                 <td>H2</td>
                 <td>Ctrl/⌘ + H</td>
             </tr>
             <tr>
-                <td>### Heading</td>
+                <td>### {{t "Heading"}}</td>
                 <td>H3</td>
                 <td>Ctrl/⌘ + H (x2)</td>
             </tr>
             </tbody>
         </table>
-        For further Markdown syntax reference: <a href="https://docs.ghost.org/faq/using-the-editor/#using-markdown" target="_blank">Markdown Documentation</a>
+{{t "For further Markdown syntax reference"}}: <a href="https://docs.ghost.org/faq/using-the-editor/#using-markdown" target="_blank">{{t "Markdown Documentation"}}</a>
     </section>
 </div>

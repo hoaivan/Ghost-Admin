@@ -26,7 +26,7 @@ Code injection: Nhúng mã
 Tags: Thẻ 
 Design: Thiết kế 
 General: Tổng hợp 
-Settings: Cấu hình 
+Settings: Tùy chỉnh
 Integrations: Tích hợp 
 Subscribers: Người đăng ký
 Stories: Tất cả bài viết 
@@ -38,7 +38,6 @@ Post will go live: Bài viết sẽ được công bố vào
 Got it: Đã hiểu
 Story Title: Tiêu đề bài biết
 Begin writing your story...: Bắt đầu bài viết của bạn...
-
 More: Thêm
 Post Settings: Tùy chỉnh bài viết
 Close: Đóng
@@ -82,7 +81,6 @@ Facebook Title: Tiêu đề trên Facebook
 Facebook Description: Mô tả trên Facebook
 Post Header: Đầu trang (Header)
 Post Footer: Chân trang (Footer)
-
 Edit this post: Chỉnh sửa bài này
 Page: Trang
 Scheduled: Đã đặt lịch
@@ -145,14 +143,14 @@ Sending Invite...: Đang gửi lời mời...
 Revoke: Thu hồi
 Resend: Gửi lại
 Active users: Người dùng đã kích hoạt
-Suspended users: Người dùng bị đình chỉ
-Suspended: Đình chỉ
+Suspended users: Người dùng bị vô hiệu
+Suspended: Đã vô hiệu
 User Actions: Hoạt động người dùng
 User Settings: Tùy chỉnh người dùng
 Make Owner: Làm chủ
 Delete User: Xóa người dùng
-Suspend User: Đình chỉ người dùng
-Un-suspend User: Hủy đình chỉ người dùng
+Suspend User: Vô hiệu người dùng
+Un-suspend User: Hủy vô hiệu người dùng
 Change Cover: Thay đổi bìa
 Edit Picture: Chỉnh sửa ảnh
 Full Name: Tên đầy đủ
@@ -160,42 +158,43 @@ Use your real name so people can recognise you: Hãy sử dụng tên thật đ�
 Slug: Slug
 Email Address: Địa chỉ Email
 Used for notifications: Sử dụng cho thông báo
-Role: Role
+Role: Vai trò
 What permissions should this user have?: Người dùng này có những quyền hạn nào?
 Location: Địa chỉ
-Where in the world do you live?: Where in the world do you live?
+Where in the world do you live?: Bạn sống tại nơi nào?
 Website: Website
-Have a website or blog other than this one? Link it!: Have a website or blog other than this one? Link it!
-Facebook Profile: Facebook Profile
-URL of your personal Facebook Profile: URL of your personal Facebook Profile
-Twitter Profile: Twitter Profile
-URL of your personal Twitter profile: URL of your personal Twitter profile
-Bio: Bio
-Write about you, in 200 characters or less: Write about you, in 200 characters or less
-Verify Password: Verify Password
-Change Password: Change Password
-About Ghost: About Ghost
-Your Profile: Your Profile
-Support Center: Support Center
-How to Use Ghost: How to Use Ghost
-Will be published in: Will be published in
-Revert to draft: Revert to draft
-Do not publish: Do not publish
-Schedule for later: Schedule for later
-Saving: Saving
-New: New
-Upload tag image: Upload tag image
-Name: Name
-Description: Description
-Maximum: Maximum
-Extra content for SEO and social media: Extra content for SEO and social media
-Delete Tag: Delete Tag
-Invite a New User: Invite a New User
-Send invitation now: Send invitation now
-Sent: Sent
-Photo of: Photo of
-Last seen: Last seen
-Locked: Locked
+Have a website or blog other than this one? Link it!: Nếu bạn có một trang web hay blog tương tự hãy kết nối vơi nó!
+Facebook Profile: Trang cá nhân Facebook
+URL of your personal Facebook Profile: Địa chỉ URL trang cá nhân Facebook của bạn
+Twitter Profile: Trang cá nhân Twitter
+URL of your personal Twitter profile: Địa chỉ URL trang cá nhân Twitter của bạn
+Bio: Tiểu sử
+Write about you, in 200 characters or less: Hãy viết một chút về bạn với 200 chữ cái hoặc ít hơn
+Verify Password: Xác nhận mật khẩu
+Change Password: Đổi mật khẩu
+About Ghost: Về Ghost
+Your Profile: Trang cá nhân
+Support Center: Trung tâm hỗ trợ
+How to Use Ghost: Làm sao để sử dụng Ghost
+Will be published in: Sẽ được đăng trong
+Revert to draft: Chuyển lại thành bài nháp
+Do not publish: Không đăng bài
+Schedule for later: Đặt lịch đăng
+Saving: Đang lưu
+New: Thêm mới
+Upload tag image: Tải lên ảnh cho thẻ
+Name: Tên
+Description: Mô tả
+Maximum: Tối đa
+Tag Settings: Tùy chỉnh thẻ
+Extra content for SEO and social media: Nội dung bổ sung cho SEO và mạng xã hội
+Delete Tag: Xóa thẻ
+Invite a New User: Mời người dùng mới
+Send invitation now: Gửi lời mời ngay
+Sent: Đã gửi
+Photo of: Ảnh của
+Last seen: Nhìn thấy lần cuối
+Locked: Đã khóa
 This is a testing ground for experimental features which aren't quite ready for primetime. They may change, break or inexplicably disappear at any time: This is a testing ground for experimental features which aren't quite ready for primetime. They may change, break or inexplicably disappear at any time
 Migration options: Migration options
 Import content: Import content
@@ -207,7 +206,7 @@ Download all of your posts and settings in a single, glorious JSON file: Downloa
 Export: Export
 Delete all content: Delete all content
 Permanently delete all posts and tags from the database, a hard reset: Permanently delete all posts and tags from the database, a hard reset
-Delete: Delete
+Delete: Xóa
 Testing tools: Testing tools
 Test email configuration: Test email configuration
 Send yourself a test email to make sure everything is working: Send yourself a test email to make sure everything is working
@@ -229,33 +228,146 @@ Routes: Routes
 Configure dynamic routing by modifying the routes.yaml file: Configure dynamic routing by modifying the routes.yaml file
 Upload routes YAML: Upload routes YAML
 Download current routes.yml: Download current routes.yml
-Navigation: Navigation
-Theme Directory: Theme Directory
+Navigation: Đường dẫn
+Theme Directory: Thư mục chủ đề
 Theme Marketplace: Theme Marketplace
 Explore a huge range of free and premium themes for Ghost with a range of design and layout options: Explore a huge range of free and premium themes for Ghost with a range of design and layout options
 Developer Docs: Developer Docs
 Build your own custom Ghost theme from scratch using our comprehensive Handlebars.js SDK: Build your own custom Ghost theme from scratch using our comprehensive Handlebars.js SDK
-Installed Themes: Installed Themes
-Upload a theme: Upload a theme
-Activation successful: Activation successful
-Activation failed: Activation failed
+Installed Themes: Chủ đề đã cài đặt
+Upload a theme: Tải lên chủ đề
+Activation successful: Kích hoạt thành công
+Activation failed: Kích hoạt thất bại
 Ghost allows you to inject code into the top and bottom of your theme files without editing them. This allows for quick modifications to insert useful things like tracking codes and meta tags: Ghost allows you to inject code into the top and bottom of your theme files without editing them. This allows for quick modifications to insert useful things like tracking codes and meta tags
 Blog Header: Blog Header
-Code here will be injected into the: Code here will be injected into the
-tag on every page of your blog: tag on every page of your blog
+Code here will be injected into the: Mã ở đây sẽ được đưa vào thẻ
+tag on every page of your blog: trên tất cả các trang của blog
 Blog Footer: Blog Footer
-New Tag: New Tag
-word: word
-Are you sure you want to delete this user?: Are you sure you want to delete this user?
-WARNING: WARNING
-You are about to delete the user: You are about to delete the user
-There is no way to recover this: There is no way to recover this
-The user will not have access to this blog anymore: The user will not have access to this blog anymore
-post: post
-created by this user will be deleted: created by this user will be deleted
-All other user data will be deleted: All other user data will be deleted
-User will not have access to this blog anymore: User will not have access to this blog anymore
-All user data will be deleted: All user data will be deleted
-Delete user and their posts: Delete user and their posts
-Delete user: Delete user
-Deleted: Deleted
+New Tag: Thẻ mới
+word: từ
+Are you sure you want to delete this user?: Bạn có chắc chắn muốn xóa người dùng này?
+WARNING: CẢNH BÁO
+You are about to delete the user: Bạn đang muốn xóa người dùng
+There is no way to recover this: Sẽ không có cách nào để phục hồi điều này
+The user will not have access to this blog anymore: Người dùng này sẽ không thể truy cập trang web này nữa
+post: bài
+created by this user will be deleted: được tạo bởi người dùng này sẽ bị xóa
+All other user data will be deleted: Toàn bộ những dữ liệu khác của người dùng sẽ bị xóa
+User will not have access to this blog anymore: Người dùng sẽ không thể truy cập trang web nãy nữa
+All user data will be deleted: Tất cả dữ liệu người dùng sẽ bị xóa
+Delete user and their posts: Xóa người dùng và bài viết của họ
+Delete user: Xóa người dùng
+Deleted: Đã xóa
+Save: Lưu
+Are you sure you want to leave this page?: Bạn có chắc chắn muốn rời khỏi trang này?
+Hey there! It looks like you didn't save the changes you made.: Có vẻ bạn chưa lưu lại những thay đổi mới.
+Save before you go!: Hãy lưu lại dữ liệu trước khi bạn rời khỏi!
+Stay: Ở lại
+Leave: Rời khỏi
+Imported: Đã thêm
+Duplicates: Trùng lặp
+Invalid: Không hợp lệ
+Select or drag-and-drop a CSV file.: Chọn hoặc kéo-thả tệp CSV.
+with: với
+errors: lỗi
+warnings: cảnh báo
+Fatal Errors: Lỗi nghiêm trọng
+Must-fix to activate theme: Phải sửa để kích hoạt chủ đề
+Errors: Lỗi
+Very recommended to fix, functionality: Rất khuyến khích sửa, chức năng
+could: có thể
+be restricted: bị hạn chế
+Warnings: Cảnh báo
+Are you sure?: Bạn có chắc chắn không?
+Deleting this integration will remove all webhooks and api keys associated with it.: Deleting this integration will remove all webhooks and api keys associated with it.
+Delete Integration: Delete Integration
+Add a Subscriber: Thêm Subscriber
+Add: Thêm
+Added: Đã thêm
+All data for this subscriber will be deleted. There is no way to recover this.: All data for this subscriber will be deleted. There is no way to recover this.
+Would you really like to delete all content from your blog?: Bạn có muốn xóa toàn bộ nội dung của trang web?
+This is permanent! No backups, no restores, no magic undo button. We warned you, k?: Điều này là vĩnh viễn! Sẽ không có sao lưu, khôi phục hay một nút hủy bỏ ma thuật nào. Chúng tôi đã cảnh báo bạn rồi đấy?
+Please re-authenticate: Vui lòng xác thực lại
+Password: Mật khẩu
+Are you sure you want to delete this post?: Bạn có chắc chắn muốn xóa bài này?
+You're about to delete: Bạn sắp xóa
+This is permanent! We warned you, k?: Điều này là vĩnh viễn! Chúng tôi đã cảnh báo bạn rồi đấy?
+Upload successful with: Tải lên thành công với
+Upload successful!: Tải lên thành công!
+Invalid theme: Chủ đề không hợp lệ
+uploaded successfully but some: tải lên thành công nhưng một vài
+were detected.: được phát hiện.
+You are still able to use and activate the theme. Here's your report...: Bạn vẫn có thể sử dụng và kích hoạt chủ đề. Đây là báo cáo của bạn...
+uploaded successfully.: tải lên thành công.
+Do you want to activate it now?: Bạn có muốn kích hoạt nó luôn?
+will overwrite an existing theme of the same name. Are you sure?: sẽ ghi đè chỉ đề đã tồn tại cùng tên. Bạn chắc chắn chứ?
+Click to select or drag-and-drop your theme zip file here.: Nhấp chuột để chọn hoặc kéo-thả tệp nén (zip) chủ đề.
+Overwrite: Ghi đè
+Try Again: Thử lại
+Activate Now: Kích hoạt ngay
+Integration name...: Integration name...
+Create: Tạo
+Created: Đã tạo
+Are you sure you want to un-suspend this user?: Bạn có chắc chắn muốn hủy bỏ vô hiệu người dùng này?
+This user will be able to log in again and will have the same permissions they had previously.: Người dùng này sẽ có thể đăng nhập lại với các quyền như trước đây.
+Deleting this webhook may prevent the integration from functioning.: Deleting this webhook may prevent the integration from functioning.
+Markdown Help: Hỗ trợ Markdown
+Markdown: Markdown
+Result: Kết quả
+Shortcut: Phím tắt
+text: văn bản
+Bold: In đậm
+Emphasize: In nghiêng
+Strike-through: Gạch giữa
+title: tiêu đề
+Link: Đường dẫn
+Inline Code: Inline Code
+Image: Ảnh
+item: mục
+List: Danh sách
+Ordered List: Danh sách có thứ tự
+quote: trích dẫn
+Blockquote: Đoạn trích
+Highlight: Highlight
+Heading: Heading
+For further Markdown syntax reference: Để tham khảo thêm cú pháp Markdown
+Markdown Documentation: Tài liệu Markdown
+Are you sure you want to delete this tag?: Bạn có chắc chắn muốn xóa thẻ này?
+This tag is attached to: Thẻ này được đính kèm
+Maybe: Có thể
+Download your theme before continuing: Tải xuống chủ đề của bạn trước khi tiếp tục
+Are you sure you want to transfer the ownership of this blog?: Bạn có chắc chắn muốn chuyển quyền sở hữu trang web?
+You will not be able to undo this action.: Bạn sẽ không thể hoàn tác hành động này.
+Yep - I'm sure: Tôi chắc chắn
+Hey there! It looks like you're in the middle of writing something and you haven't saved all of your content.: Có vẻ như bạn đang viết dở một số nội dung và chưa lưu lại chúng.
+Edit: Chỉnh sửa
+Webhook name...: Webhook name...
+Event: Event
+Select an event: Select an event
+Target URL: Target URL
+Webhook target URL...: Webhook target URL...
+Secret: Secret
+Webhook secret...: Webhook secret...
+Are you sure you want to suspend this user?: Bạn có chắc chắn muốn vô hiệu người dùng này?
+This user will no longer be able to log in but their posts will be kept.: Người dùng này sẽ không thể đăng nhập nữa nhưng những bài viết của họ vẫn được giữ lại.
+Suspend: Vô hiệu
+You haven't added any tags yet!: Bạn chưa thêm thẻ nào cả!
+Add a tag: Thêm thẻ
+Send: Gửi
+Send test notification: Gửi thử thông báo
+Log in: Đăng nhập
+Create Account: Tạo tài khoản
+Reset Password: Đặt lại mật khẩu
+New Password: Mật khẩu mới
+Sign in: Đăng nhập
+Creating: Đang tạo
+Publish: Đăng bài
+Update: Cập nhật
+Old Password: Mật khẩu cũ
+Forgot: Forgot
+Create your account: Create your account
+Blog title: Blog title
+Full name: Full name
+Email address: Email address
+Last step: Last step
+Invite your team: Invite your team

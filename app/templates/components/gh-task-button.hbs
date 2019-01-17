@@ -7,9 +7,9 @@
     )}}
 {{else}}
     <span>
-    {{#if isRunning}}{{svg-jar "spinner" class="gh-icon-spinner"}}{{runningText}}{{/if}}
-    {{#if isIdle}}{{buttonText}}{{/if}}
-    {{#if isSuccess}}{{svg-jar "check-circle"}} {{successText}}{{/if}}
-    {{#if isFailure}}{{svg-jar "retry"}} {{failureText}}{{/if}}
+    {{#if isRunning}}{{svg-jar "spinner" class="gh-icon-spinner"}}{{t runningText}}{{/if}}
+    {{#if isIdle}}{{t buttonText}}{{/if}}
+    {{#if isSuccess}}{{svg-jar "check-circle"}} {{t successText}}{{/if}}
+    {{#if isFailure}}{{svg-jar "retry"}} {{t failureText}}{{/if}}
     </span>
 {{/if}}

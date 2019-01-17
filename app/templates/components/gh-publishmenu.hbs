@@ -1,6 +1,6 @@
 {{#basic-dropdown verticalPosition="below" onOpen=(action "open") onClose=(action "close") as |dd|}}
     {{#dd.trigger class="gh-btn gh-btn-outline gh-publishmenu-trigger"}}
-        <span data-test-publishmenu-trigger>{{triggerText}} {{svg-jar "arrow-down"}}</span>
+        <span data-test-publishmenu-trigger>{{t triggerText}} {{svg-jar "arrow-down"}}</span>
     {{/dd.trigger}}
 
     {{#dd.content class="gh-publishmenu-dropdown"}}
@@ -29,7 +29,7 @@
          --}}
         <footer class="gh-publishmenu-footer">
             <button class="gh-btn gh-btn-outline gh-btn-link" {{action dd.actions.close}} data-test-publishmenu-cancel>
-                <span>Cancel</span>
+                <span>{{t "Cancel"}}</span>
             </button>
             {{gh-task-button buttonText
                 task=save
