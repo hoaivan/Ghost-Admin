@@ -1,16 +1,16 @@
 <section class="gh-canvas">
     <header class="gh-canvas-header">
-        <h2 class="gh-canvas-title" data-test-screen-title>Labs</h2>
+        <h2 class="gh-canvas-title" data-test-screen-title>{{t "Labs"}}</h2>
     </header>
 
     <section class="view-container settings-debug">
-        <p class="gh-box gh-box-info">{{svg-jar "idea"}}This is a testing ground for experimental features which aren't quite ready for primetime. They may change, break or inexplicably disappear at any time.</p>
+        <p class="gh-box gh-box-info">{{svg-jar "idea"}}{{t "This is a testing ground for experimental features which aren't quite ready for primetime. They may change, break or inexplicably disappear at any time"}}.</p>
 
-        <div class="gh-setting-header">Migration options</div>
+        <div class="gh-setting-header">{{t "Migration options"}}</div>
         <div class="gh-setting">
             <div class="gh-setting-content">
-                <div class="gh-setting-title">Import content</div>
-                <div class="gh-setting-desc">Import posts from another Ghost installation</div>
+                <div class="gh-setting-title">{{t "Import content"}}</div>
+                <div class="gh-setting-desc">{{t "Import posts from another Ghost installation"}}</div>
             </div>
             <div class="gh-setting-action">
                 <form id="settings-import" enctype="multipart/form-data">
@@ -29,9 +29,9 @@
             <div class="gh-import-errors {{if importSuccessful "gh-import-errors-warning"}}" data-test-import-errors>
                 <div class="gh-import-errors-title">
                     {{#if importSuccessful}}
-                        Import successful with warnings
+                        {{t "Import successful with warnings"}}
                     {{else}}
-                        Import failed
+                        {{t "Import failed"}}
                     {{/if}}
                 </div>
 
@@ -53,40 +53,40 @@
 
         <div class="gh-setting">
             <div class="gh-setting-content">
-                <div class="gh-setting-title">Export your content</div>
-                <div class="gh-setting-desc">Download all of your posts and settings in a single, glorious JSON file</div>
+                <div class="gh-setting-title">{{t "Export your content"}}</div>
+                <div class="gh-setting-desc">{{t "Download all of your posts and settings in a single, glorious JSON file"}}</div>
             </div>
             <div class="gh-setting-action">
-                <button type="button" class="gh-btn gh-btn-hover-blue" {{action "downloadFile" "db"}}><span>Export</span></button>
+                <button type="button" class="gh-btn gh-btn-hover-blue" {{action "downloadFile" "db"}}><span>{{t "Export"}}</span></button>
             </div>
         </div>
         <div class="gh-setting">
             <div class="gh-setting-content">
-                <div class="gh-setting-title">Delete all content</div>
-                <div class="gh-setting-desc">Permanently delete all posts and tags from the database, a hard reset</div>
+                <div class="gh-setting-title">{{t "Delete all content"}}</div>
+                <div class="gh-setting-desc">{{t "Permanently delete all posts and tags from the database, a hard reset"}}</div>
             </div>
             <div class="gh-setting-action">
-                <button type="button" class="gh-btn gh-btn-hover-red js-delete" {{action "toggleDeleteAllModal"}}><span>Delete</span></button>
+                <button type="button" class="gh-btn gh-btn-hover-red js-delete" {{action "toggleDeleteAllModal"}}><span>{{t "Delete"}}</span></button>
             </div>
         </div>
 
-        <div class="gh-setting-header">Testing tools</div>
+        <div class="gh-setting-header">{{t "Testing tools"}}</div>
         <div class="gh-setting">
             <div class="gh-setting-content">
-                <div class="gh-setting-title">Test email configuration</div>
-                <div class="gh-setting-desc">Send yourself a test email to make sure everything is working</div>
+                <div class="gh-setting-title">{{t "Test email configuration"}}</div>
+                <div class="gh-setting-desc">{{t "Send yourself a test email to make sure everything is working"}}</div>
             </div>
             <div class="gh-setting-action">
                 {{gh-task-button "Send" successText="Sent" task=sendTestEmail class="gh-btn gh-btn-hover-blue gh-btn-icon"}}
             </div>
         </div>
 
-        <div class="gh-setting-header">Beta features</div>
+        <div class="gh-setting-header">{{t "Beta features"}}</div>
         {{#if (not-eq feature.labs.publicAPI undefined)}}
             <div class="gh-setting">
                 <div class="gh-setting-content">
-                <div class="gh-setting-title">Public API (deprecated)</div>
-                <div class="gh-setting-desc">⚠️ Please use the Content API instead, more info in <a href="https://docs.ghost.org/api/content/">the docs</a></div>
+                    <div class="gh-setting-title">{{t "Public API"}} ({{t "deprecated"}})</div>
+                    <div class="gh-setting-desc">⚠️ Please use the Content API instead, {{t "For full instructions, read the"}} <a href="https://docs.ghost.org/api/content/">{{t "the docs"}}</a></div>
                 </div>
                 <div class="gh-setting-action">
                     <div class="for-checkbox">{{gh-feature-flag "publicAPI"}}</div>
@@ -95,8 +95,8 @@
         {{/if}}
         <div class="gh-setting">
             <div class="gh-setting-content">
-                <div class="gh-setting-title">Night shift</div>
-                <div class="gh-setting-desc">Swap Ghost admin's colours to a dark background which is easy on the eyes</div>
+                <div class="gh-setting-title">{{t "Night shift"}}</div>
+                <div class="gh-setting-desc">{{t "Swap Ghost admin's colours to a dark background which is easy on the eyes"}}</div>
             </div>
             <div class="gh-setting-action">
                 <div class="for-checkbox">{{gh-feature-flag "nightShift"}}</div>
@@ -104,8 +104,8 @@
         </div>
         <div class="gh-setting">
             <div class="gh-setting-content">
-                <div class="gh-setting-title">Subscribers</div>
-                <div class="gh-setting-desc">Collect email addresses from your readers, more info in <a href="https://docs.ghost.org/faq/enable-subscribers-feature/">the docs</a></div>
+                <div class="gh-setting-title">{{t "Subscribers"}}</div>
+                <div class="gh-setting-desc">{{t "Collect email addresses from your readers, more info in"}} <a href="https://docs.ghost.org/api/content/">{{t "the docs"}}</a></div>
             </div>
             <div class="gh-setting-action">
                 <div class="for-checkbox">{{gh-feature-flag "subscribers"}}</div>
@@ -121,8 +121,8 @@
                 as |uploader|
             }}
             <div class="gh-setting-content">
-                <div class="gh-setting-title">Redirects</div>
-                <div class="gh-setting-desc">Configure redirects for old or moved content, more info in <a href="https://docs.ghost.org/tutorials/implementing-redirects/">the docs</a></div>
+                <div class="gh-setting-title">{{t "Redirects"}}</div>
+                <div class="gh-setting-desc">{{t "Configure redirects for old or moved content, more info in"}} <a href="https://docs.ghost.org/tutorials/implementing-redirects/">{{t "the docs"}}</a></div>
                 {{#each uploader.errors as |error|}}
                     <div class="gh-setting-error" data-test-error="redirects">{{error.message}}</div>
                 {{/each}}
@@ -139,15 +139,15 @@
                     >
                         <span>
                             {{#if redirectSuccess}}
-                                {{svg-jar "check-circle"}} Uploaded
+                                {{svg-jar "check-circle"}} {{t "Uploaded"}}
                             {{else if redirectFailure}}
-                                {{svg-jar "retry"}} Upload Failed
+                                {{svg-jar "retry"}} {{t "Upload Failed"}}
                             {{else}}
-                                Upload redirects JSON
+                                {{t "Upload redirects JSON"}}
                             {{/if}}
                         </span>
                     </button>
-                    <span><a href="#" {{action "downloadFile" "redirects/json"}} data-test-link="download-redirects">Download current redirects</a></span>
+                    <span><a href="#" {{action "downloadFile" "redirects/json"}} data-test-link="download-redirects">{{t "Download current redirects"}}</a></span>
                 {{/if}}
 
                 <div style="display:none">
@@ -166,8 +166,8 @@
                 as |uploader|
             }}
             <div class="gh-setting-content">
-                <div class="gh-setting-title">Routes</div>
-                <div class="gh-setting-desc">Configure dynamic routing by modifying the routes.yaml file</div>
+                <div class="gh-setting-title">{{t "Routes"}}</div>
+                <div class="gh-setting-desc">{{t "Configure dynamic routing by modifying the routes.yaml file"}}</div>
                 {{#each uploader.errors as |error|}}
                     <div class="gh-setting-error" data-test-error="routes">{{error.message}}</div>
                 {{/each}}
@@ -184,15 +184,15 @@
                     >
                         <span>
                             {{#if routesSuccess}}
-                                {{svg-jar "check-circle"}} Uploaded
+                                {{svg-jar "check-circle"}} {{t "Uploaded"}}
                             {{else if routesFailure}}
-                                {{svg-jar "retry"}} Upload Failed
+                                {{svg-jar "retry"}} {{t "Upload Failed"}}
                             {{else}}
-                                Upload routes YAML
+                                {{t "Upload routes YAML"}}
                             {{/if}}
                         </span>
                     </button>
-                    <span><a href="#" {{action "downloadFile" "settings/routes/yaml"}} data-test-link="download-routes">Download current routes.yml</a></span>
+                    <span><a href="#" {{action "downloadFile" "settings/routes/yaml"}} data-test-link="download-routes">{{t "Download current routes.yml"}}</a></span>
                 {{/if}}
 
                 <div style="display:none">

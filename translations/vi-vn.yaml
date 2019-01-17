@@ -1,13 +1,24 @@
 Your stories: Bài viết của bạn
+You haven't written any stories yet!: Bạn chưa có bài viết nào!
+No stories match the current filter: Không tìm thấy bài viết nào
+Show all stories: Hiển thị toàn bộ bài viết
+Write a new Story: Viết bài mới
 Sort by: Sắp sếp
 New story: Bài viết mới
-Newest: mới nhất 
-Oldest: cũ nhất 
-Recently updated: mới cập nhật  
+Newest: Mới nhất
+Oldest: Cũ nhất
+Recently updated: Mới cập nhật
+Draft posts: Bài viết nháp
+Published posts: Bài viết đã đăng
+Scheduled posts: Bài viết theo lịch
+Featured posts: Bài viết nổi bật
+Pages: Tất cả Trang
+Search tags: Tìm kiếm tag
+Search authors: Tìm kiếm tác giả
 All posts: Tất cả bài viết
 All authors:  Tất cả tác giả 
 All tags: Tất cả thẻ
-Published: Đã xuất bản
+Published: Đã đăng
 by: bởi 
 View site: Xem trang tin 
 Labs: Thí nghiệm  
@@ -23,3 +34,228 @@ Team: Người dùng
 Content: Nội dung
 Sign Out: Đăng xuất 
 Cancel: Hủy
+Post will go live: Bài viết sẽ được công bố vào
+Got it: Đã hiểu
+Story Title: Tiêu đề bài biết
+Begin writing your story...: Bắt đầu bài viết của bạn...
+
+More: Thêm
+Post Settings: Tùy chỉnh bài viết
+Close: Đóng
+Upload post image: Tải ảnh lên
+Post URL: Đường dẫn URL
+View post: Xem bài
+Preview: Xem trước
+Publish Date: Ngày đăng
+Scheduled Date: Lịch hẹn
+Use the publish menu to re-schedule: Sử dụng menu xuất bản để lên lịch lại
+Authors: Tác giả
+Meta Data: Meta Data
+Extra content for search engines: Thông tin bổ sung để tìm kiếm
+Twitter Card: Thẻ Twitter
+Customise structured data for Twitter: Tùy chỉnh cấu trúc dữ liệu cho Twitter
+Facebook Card: Thẻ Facebook
+Customise Open Graph data: Customise Open Graph data
+Code Injection: Nhúng mã
+Add styles/scripts to the header & footer: Thêm styles/scripts vào header & footer
+Turn this post into a page: Chuyển bài viết này thành một Trang
+Feature this post: Feature this post
+Delete Post: Xóa bài
+Back: Quay lại
+Meta Title: Meta Title
+Recommended: Đề xuất
+
+Administrator: Administrator
+Editor: Editor
+Author: Author
+Contributor: Contributor
+Admin Integration: Admin Integration
+
+characters. You’ve used: kí tự. Bạn đã sử dụng
+Meta Description: Meta Description
+Search Engine Result Preview: Xem trước kết quả tìm kiếm
+Add Twitter image: Thêm ảnh trên Twitter
+Twitter Title: Tiêu đề trên Twitter
+Twitter Description: Mô tả trên Twitter
+Add Facebook image: Thêm ảnh trên Facebook
+Facebook Title: Tiêu đề trên Facebook
+Facebook Description: Mô tả trên Facebook
+Post Header: Đầu trang (Header)
+Post Footer: Chân trang (Footer)
+
+Edit this post: Chỉnh sửa bài này
+Page: Trang
+Scheduled: Đã đặt lịch
+Draft: Nháp
+Featured: Nổi bật
+Will go live: Sẽ đăng
+Last edited: Chỉnh sửa lần cuối
+Ready to publish your post?: Bạn đã sãn sàng để đăng bài này?
+Set it live now: Đăng ngay
+Publish this post immediately: Đăng bài này ngay
+Schedule it for later: Đặt lịch đăng
+Set automatic future publish date: Đặt ngày tự đăng trong tương lai
+Update post status: Cập nhật trạng thái bài
+Unpublished: Chưa đăng
+Revert this post to a private draft: Chuyển bài viết này lại thành bài nháp
+Display this post publicly: Hiển thị bài này công khai
+Save settings: Lưu tùy chỉnh
+Publication info: Thông tin xuất bản
+Title: Tiêu đề
+description: mô tả
+The details used to identify your publication around the web: Các chi tiết được sử dụng để xác định ấn phẩm của bạn trên web
+The name of your site: Tên trang web của bạn
+Used in your theme, meta data and search results: Dùng trong chủ đề, meta data và kết quả tìm kiếm
+Expand: Mở rộng
+Site timezone: Múi giờ trang web
+Set the time and date of your publication, used for all published posts: Đặt thời gian và ngày xuất bản, sử dụng cho tất cả các bài đã đăng
+Publication Language: Ngôn ngữ xuất bản
+Set the language/locale which is used on your site: Đặt ngôn ngữ / địa phương được sử dụng trên trang web
+Excerpt: Trích đoạn
+Default: Mặc định
+English: English
+you can add translation files to your theme for: bạn có thể thêm tệp ngôn ngữ vào chủ để cho
+any language: bất kỳ ngôn ngữ
+Publication identity: Định dạng báo
+Publication icon: Biểu tượng báo
+A square, social icon used in the UI of your publication, at least 60x60px: Một biểu tượng xã hội, hình vuông được sử dụng trong UI của ấn phẩm của bạn, kích thước tối thiểu 60x60px
+delete: xóa
+Upload Image: Tải ảnh lên
+Publication logo: Logo báo
+The primary logo for your brand displayed across your theme, should be transparent and at least 600px x 72px: Logo chính cho thương hiệu của bạn được hiển thị trên toàn chủ đề, nên trong suốt và kích thước tối thiểu 600px x 72px
+Publication cover: Bìa báo
+An optional large background image for your site: Hình nền lớn tùy chọn cho trang web
+Social accounts: Tài khoản xã hội
+Link your social accounts for full structured data and rich card support: Liên kết tài khoản xã hội của bạn để hỗ trợ cấu trúc dữ liệu và thẻ phong phú
+URL of your publication's Facebook Page: Địa chỉ URL bài đăng trên Facebook
+URL of your publication's Twitter profile: Địa chỉ URL bài đăng trên trang cá nhân Twitter
+Advanced settings: Tùy chỉnh nâng cao
+Make this site private: Đặt trang này ở chế độ riêng tư
+Enable protection with simple shared password. All search engine optimization and social features will be disabled.: Kích hoạt tính năng bảo vệ khi chia sẻ mật khẩu. Tất cả các tính năng xã hội và tối ưu hóa công cụ tìm kiếm sẽ bị tắt.
+A private RSS feed is available at: Nguồn cấp dữ liệu RSS riêng có sẵn tại
+Set the password for this site: Đặt mật khẩu cho trang này
+Team members: Thành viên
+Invite People: Thêm người dùng
+Invited users: Người dùng đã được mời
+Invitation not sent - please try again: Lời mời chưa được gửi - hãy thử lại
+Invitation sent: Đã gửi lời mời
+expired: đã hết hạn
+expires: hết hạn
+Sending Invite...: Đang gửi lời mời...
+Revoke: Thu hồi
+Resend: Gửi lại
+Active users: Người dùng đã kích hoạt
+Suspended users: Người dùng bị đình chỉ
+Suspended: Đình chỉ
+User Actions: Hoạt động người dùng
+User Settings: Tùy chỉnh người dùng
+Make Owner: Làm chủ
+Delete User: Xóa người dùng
+Suspend User: Đình chỉ người dùng
+Un-suspend User: Hủy đình chỉ người dùng
+Change Cover: Thay đổi bìa
+Edit Picture: Chỉnh sửa ảnh
+Full Name: Tên đầy đủ
+Use your real name so people can recognise you: Hãy sử dụng tên thật để mọi người có thể nhận ra bạn
+Slug: Slug
+Email Address: Địa chỉ Email
+Used for notifications: Sử dụng cho thông báo
+Role: Role
+What permissions should this user have?: Người dùng này có những quyền hạn nào?
+Location: Địa chỉ
+Where in the world do you live?: Where in the world do you live?
+Website: Website
+Have a website or blog other than this one? Link it!: Have a website or blog other than this one? Link it!
+Facebook Profile: Facebook Profile
+URL of your personal Facebook Profile: URL of your personal Facebook Profile
+Twitter Profile: Twitter Profile
+URL of your personal Twitter profile: URL of your personal Twitter profile
+Bio: Bio
+Write about you, in 200 characters or less: Write about you, in 200 characters or less
+Verify Password: Verify Password
+Change Password: Change Password
+About Ghost: About Ghost
+Your Profile: Your Profile
+Support Center: Support Center
+How to Use Ghost: How to Use Ghost
+Will be published in: Will be published in
+Revert to draft: Revert to draft
+Do not publish: Do not publish
+Schedule for later: Schedule for later
+Saving: Saving
+New: New
+Upload tag image: Upload tag image
+Name: Name
+Description: Description
+Maximum: Maximum
+Extra content for SEO and social media: Extra content for SEO and social media
+Delete Tag: Delete Tag
+Invite a New User: Invite a New User
+Send invitation now: Send invitation now
+Sent: Sent
+Photo of: Photo of
+Last seen: Last seen
+Locked: Locked
+This is a testing ground for experimental features which aren't quite ready for primetime. They may change, break or inexplicably disappear at any time: This is a testing ground for experimental features which aren't quite ready for primetime. They may change, break or inexplicably disappear at any time
+Migration options: Migration options
+Import content: Import content
+Import posts from another Ghost installation: Import posts from another Ghost installation
+Import successful with warnings: Import successful with warnings
+Import failed: Import failed
+Export your content: Export your content
+Download all of your posts and settings in a single, glorious JSON file: Download all of your posts and settings in a single, glorious JSON file
+Export: Export
+Delete all content: Delete all content
+Permanently delete all posts and tags from the database, a hard reset: Permanently delete all posts and tags from the database, a hard reset
+Delete: Delete
+Testing tools: Testing tools
+Test email configuration: Test email configuration
+Send yourself a test email to make sure everything is working: Send yourself a test email to make sure everything is working
+Beta features: Beta features
+Public API: Public API
+For full instructions, read the: For full instructions, read the
+developer guide: developer guide
+Night shift: Night shift
+Swap Ghost admin's colours to a dark background which is easy on the eyes: Swap Ghost admin's colours to a dark background which is easy on the eyes
+Collect email addresses from your readers, more info in: Collect email addresses from your readers, more info in
+the docs: the docs
+Redirects: Redirects
+Configure redirects for old or moved content, more info in: Configure redirects for old or moved content, more info in
+Uploaded: Uploaded
+Upload Failed: Upload Failed
+Upload redirects JSON: Upload redirects JSON
+Download current redirects: Download current redirects
+Routes: Routes
+Configure dynamic routing by modifying the routes.yaml file: Configure dynamic routing by modifying the routes.yaml file
+Upload routes YAML: Upload routes YAML
+Download current routes.yml: Download current routes.yml
+Navigation: Navigation
+Theme Directory: Theme Directory
+Theme Marketplace: Theme Marketplace
+Explore a huge range of free and premium themes for Ghost with a range of design and layout options: Explore a huge range of free and premium themes for Ghost with a range of design and layout options
+Developer Docs: Developer Docs
+Build your own custom Ghost theme from scratch using our comprehensive Handlebars.js SDK: Build your own custom Ghost theme from scratch using our comprehensive Handlebars.js SDK
+Installed Themes: Installed Themes
+Upload a theme: Upload a theme
+Activation successful: Activation successful
+Activation failed: Activation failed
+Ghost allows you to inject code into the top and bottom of your theme files without editing them. This allows for quick modifications to insert useful things like tracking codes and meta tags: Ghost allows you to inject code into the top and bottom of your theme files without editing them. This allows for quick modifications to insert useful things like tracking codes and meta tags
+Blog Header: Blog Header
+Code here will be injected into the: Code here will be injected into the
+tag on every page of your blog: tag on every page of your blog
+Blog Footer: Blog Footer
+New Tag: New Tag
+word: word
+Are you sure you want to delete this user?: Are you sure you want to delete this user?
+WARNING: WARNING
+You are about to delete the user: You are about to delete the user
+There is no way to recover this: There is no way to recover this
+The user will not have access to this blog anymore: The user will not have access to this blog anymore
+post: post
+created by this user will be deleted: created by this user will be deleted
+All other user data will be deleted: All other user data will be deleted
+User will not have access to this blog anymore: User will not have access to this blog anymore
+All user data will be deleted: All user data will be deleted
+Delete user and their posts: Delete user and their posts
+Delete user: Delete user
+Deleted: Deleted
