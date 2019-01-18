@@ -1,1 +1,394 @@
 Your stories: Your stories
+Invite your team: Invite your team
+Design: Design
+Social accounts: Social accounts
+warnings: warnings
+You're about to delete: You're about to delete
+Import content: Import content
+Are you sure you want to delete this user?: Are you sure you want to delete this user?
+Default: Default
+Feature this post: Feature this post
+View post: View post
+Export: Export
+The details used to identify your publication around the web: The details used to identify your publication around the web
+Owner: Owner
+Search tags: Search tags
+Write about you, in 200 characters or less: Write about you, in 200 characters or less
+Create your account: Create your account
+title: title
+Full name: Full name
+Yep - I'm sure: Yep - I'm sure
+There is no way to recover this: There is no way to recover this
+Import failed: Import failed
+could: could
+Navigation: Navigation
+For full instructions, read the: For full instructions, read the
+Ordered List: Ordered List
+Forgot: Forgot
+Integration name...: Integration name...
+URL of your personal Twitter profile: URL of your personal Twitter profile
+Bold: Bold
+Email Address: Email Address
+Image: Image
+Featured posts: Featured posts
+Set the language/locale which is used on your site: Set the language/locale which is used on your site
+Suspended users: Suspended users
+About Ghost: About Ghost
+Your Profile: Your Profile
+Update post status: Update post status
+delete: delete
+Send test notification: Send test notification
+Facebook Profile: Facebook Profile
+Webhook name...: Webhook name...
+Un-suspend User: Un-suspend User
+Change Password: Change Password
+Website: Website
+Verify Password: Verify Password
+Schedule it for later: Schedule it for later
+Updated: Updated
+Facebook Card: Facebook Card
+Email address: Email address
+Stay: Stay
+You are about to delete the user: You are about to delete the user
+Post Header: Post Header
+Post will go live: Post will go live
+Enable protection with simple shared password. All search engine optimization and social features will be disabled.: Enable protection with simple shared password. All search engine optimization and social features will be disabled.
+Add styles/scripts to the header & footer: Add styles/scripts to the header & footer
+Ready to publish your post?: Ready to publish your post?
+post: post
+Added: Added
+Theme Directory: Theme Directory
+Revoke: Revoke
+Duplicates: Duplicates
+Authors: Authors
+Sending Invite...: Sending Invite...
+Schedule: Schedule
+Select or drag-and-drop a CSV file.: Select or drag-and-drop a CSV file.
+Set the time and date of your publication, used for all published posts: Set the time and date of your publication, used for all published posts
+Support Center: Support Center
+Search Engine Result Preview: Search Engine Result Preview
+Create: Create
+Preview: Preview
+This tag is attached to: This tag is attached to
+Labs: Labs
+Tag Settings: Tag Settings
+New Password: New Password
+Upload routes YAML: Upload routes YAML
+Blog title: Blog title
+Invalid theme: Invalid theme
+Deleting this integration will remove all webhooks and api keys associated with it.: Deleting this integration will remove all webhooks and api keys associated with it.
+Saved: Saved
+URL of your publication's Twitter profile: URL of your publication's Twitter profile
+the docs: the docs
+item: item
+What permissions should this user have?: What permissions should this user have?
+Sent: Sent
+All authors: All authors
+Tweet @TryGhost!: Tweet @TryGhost!
+Scheduled Date: Scheduled Date
+Use your real name so people can recognise you: Use your real name so people can recognise you
+Shortcut: Shortcut
+Routes: Routes
+expires: expires
+For further Markdown syntax reference: For further Markdown syntax reference
+Add Twitter image: Add Twitter image
+Select an event: Select an event
+Post URL: Post URL
+Markdown Help: Markdown Help
+You haven't added any tags yet!: You haven't added any tags yet!
+Saving failed: Saving failed
+Hey there! It looks like you're in the middle of writing something and you haven't saved all of your content.: Hey there! It looks like you're in the middle of writing something and you haven't saved all of your content.
+Deleted: Deleted
+Facebook Description: Facebook Description
+Invitation not sent - please try again: Invitation not sent - please try again
+Last edited: Last edited
+Upload Failed: Upload Failed
+A private RSS feed is available at: A private RSS feed is available at
+Saving: Saving
+Meta Data: Meta Data
+Locked: Locked
+Export your content: Export your content
+Back: Back
+All other user data will be deleted: All other user data will be deleted
+Featured: Featured
+All tags: All tags
+Set it live now: Set it live now
+Photo of: Photo of
+Delete: Delete
+created by this user will be deleted: created by this user will be deleted
+Installed Themes: Installed Themes
+Link your social accounts for full structured data and rich card support: Link your social accounts for full structured data and rich card support
+characters. You’ve used: characters. You’ve used
+Configure dynamic routing by modifying the routes.yaml file: Configure dynamic routing by modifying the routes.yaml file
+Schedule for later: Schedule for later
+A square, social icon used in the UI of your publication, at least 60x60px: A square, social icon used in the UI of your publication, at least 60x60px
+New story: New story
+Publication Language: Publication Language
+Errors: Errors
+Meta Description: Meta Description
+Active users: Active users
+Download current redirects: Download current redirects
+Upload a theme: Upload a theme
+Where in the world do you live?: Where in the world do you live?
+Name: Name
+Make this site private: Make this site private
+This user will no longer be able to log in but their posts will be kept.: This user will no longer be able to log in but their posts will be kept.
+Invite a New User: Invite a New User
+How to Use Ghost: How to Use Ghost
+Please re-authenticate: Please re-authenticate
+English: English
+Role: Role
+Search: Search
+uploaded successfully.: uploaded successfully.
+Try Again: Try Again
+Draft: Draft
+All posts: All posts
+Do not publish: Do not publish
+URL of your personal Facebook Profile: URL of your personal Facebook Profile
+Delete Tag: Delete Tag
+Invited users: Invited users
+Publish failed: Publish failed
+Story Title: Story Title
+You will not be able to undo this action.: You will not be able to undo this action.
+Public API: Public API
+Emphasize: Emphasize
+Upload Image: Upload Image
+Close: Close
+Fatal Errors: Fatal Errors
+Invitation sent: Invitation sent
+Retry: Retry
+Set automatic future publish date: Set automatic future publish date
+The primary logo for your brand displayed across your theme, should be transparent and at least 600px x 72px: The primary logo for your brand displayed across your theme, should be transparent and at least 600px x 72px
+Invalid: Invalid
+Link: Link
+Activation successful: Activation successful
+Delete User: Delete User
+Import successful with warnings: Import successful with warnings
+Customise Open Graph data: Customise Open Graph data
+Last step: Last step
+Maybe: Maybe
+Import posts from another Ghost installation: Import posts from another Ghost installation
+Last seen: Last seen
+Extra content for search engines: Extra content for search engines
+Delete Post: Delete Post
+Overwrite: Overwrite
+Your timezone has been automatically set to: Your timezone has been automatically set to
+Delete all content: Delete all content
+Scheduled posts: Scheduled posts
+Settings: Settings
+The local time here is currently: The local time here is currently
+Got it: Got it
+Loading: Loading
+Secret: Secret
+Send: Send
+Update failed: Update failed
+Publish Date: Publish Date
+Sign Out: Sign Out
+Save settings: Save settings
+Team members: Team members
+word: word
+Code injection: Code injection
+Test email configuration: Test email configuration
+errors: errors
+with: with
+Creating: Creating
+More: More
+Invite People: Invite People
+Slug: Slug
+Redirects: Redirects
+Delete Integration: Delete Integration
+Customise structured data for Twitter: Customise structured data for Twitter
+Advanced settings: Advanced settings
+Oldest: Oldest
+Publishing: Publishing
+Post Settings: Post Settings
+This is permanent! We warned you, k?: This is permanent! We warned you, k?
+Ghost allows you to inject code into the top and bottom of your theme files without editing them. This allows for quick modifications to insert useful things like tracking codes and meta tags: Ghost allows you to inject code into the top and bottom of your theme files without editing them. This allows for quick modifications to insert useful things like tracking codes and meta tags
+Published posts: Published posts
+deprecated: deprecated
+quote: quote
+Tags: Tags
+Click to select or drag-and-drop your theme zip file here.: Click to select or drag-and-drop your theme zip file here.
+This is permanent! No backups, no restores, no magic undo button. We warned you, k?: This is permanent! No backups, no restores, no magic undo button. We warned you, k?
+All data for this subscriber will be deleted. There is no way to recover this.: All data for this subscriber will be deleted. There is no way to recover this.
+You are still able to use and activate the theme. Here's your report...: You are still able to use and activate the theme. Here's your report...
+Uploaded: Uploaded
+Excerpt: Excerpt
+Markdown: Markdown
+Testing tools: Testing tools
+Night shift: Night shift
+Are you sure you want to delete this tag?: Are you sure you want to delete this tag?
+Leave: Leave
+Extra content for SEO and social media: Extra content for SEO and social media
+Facebook Title: Facebook Title
+description: description
+Site timezone: Site timezone
+Unscheduling failed: Unscheduling failed
+Subscribers: Subscribers
+Collect email addresses from your readers, more info in: Collect email addresses from your readers, more info in
+Write a new Story: Write a new Story
+Unpublished: Unpublished
+View site: View site
+Are you sure?: Are you sure?
+Contributor: Contributor
+Pages: Pages
+Begin writing your story...: Begin writing your story...
+Do you want to activate it now?: Do you want to activate it now?
+Inline Code: Inline Code
+Revert this post to a private draft: Revert this post to a private draft
+User will not have access to this blog anymore: User will not have access to this blog anymore
+Rescheduling: Rescheduling
+Meta Title: Meta Title
+Bio: Bio
+Edit: Edit
+Administrator: Administrator
+Publication info: Publication info
+Code Injection: Code Injection
+Create Account: Create Account
+User Settings: User Settings
+Activate Now: Activate Now
+Recommended: Recommended
+Editor: Editor
+Are you sure you want to delete this post?: Are you sure you want to delete this post?
+Set the password for this site: Set the password for this site
+be restricted: be restricted
+Upload successful!: Upload successful!
+Add Facebook image: Add Facebook image
+Code here will be injected into the: Code here will be injected into the
+Will be published in: Will be published in
+Expand: Expand
+Created: Created
+Edit this post: Edit this post
+Swap Ghost admin's colours to a dark background which is easy on the eyes: Swap Ghost admin's colours to a dark background which is easy on the eyes
+Stories: Stories
+Save: Save
+Heading: Heading
+General: General
+Change Cover: Change Cover
+Turn this post into a page: Turn this post into a page
+Delete user and their posts: Delete user and their posts
+Would you really like to delete all content from your blog?: Would you really like to delete all content from your blog?
+Will go live: Will go live
+Highlight: Highlight
+Are you sure you want to leave this page?: Are you sure you want to leave this page?
+Display this post publicly: Display this post publicly
+text: text
+Password: Password
+Used for notifications: Used for notifications
+All user data will be deleted: All user data will be deleted
+Download your theme before continuing: Download your theme before continuing
+Updating: Updating
+Sign in: Sign in
+Send invitation now: Send invitation now
+Download all of your posts and settings in a single, glorious JSON file: Download all of your posts and settings in a single, glorious JSON file
+Markdown Documentation: Markdown Documentation
+Recently updated: Recently updated
+Deleting this webhook may prevent the integration from functioning.: Deleting this webhook may prevent the integration from functioning.
+Publish this post immediately: Publish this post immediately
+URL of your publication's Facebook Page: URL of your publication's Facebook Page
+Scheduling failed: Scheduling failed
+This is a testing ground for experimental features which aren't quite ready for primetime. They may change, break or inexplicably disappear at any time: This is a testing ground for experimental features which aren't quite ready for primetime. They may change, break or inexplicably disappear at any time
+Cancel: Cancel
+Author: Author
+Search authors: Search authors
+by: by
+Developer Docs: Developer Docs
+Publication cover: Publication cover
+Strike-through: Strike-through
+Blog Header: Blog Header
+Upload tag image: Upload tag image
+Old Password: Old Password
+Target URL: Target URL
+Migration options: Migration options
+Log in: Log in
+No stories match the current filter: No stories match the current filter
+New Tag: New Tag
+Theme Marketplace: Theme Marketplace
+Configure redirects for old or moved content, more info in: Configure redirects for old or moved content, more info in
+Twitter Card: Twitter Card
+any language: any language
+Imported: Imported
+Resend: Resend
+Blockquote: Blockquote
+User Actions: User Actions
+Make Owner: Make Owner
+Blog Footer: Blog Footer
+Build your own custom Ghost theme from scratch using our comprehensive Handlebars.js SDK: Build your own custom Ghost theme from scratch using our comprehensive Handlebars.js SDK
+Publication icon: Publication icon
+Suspended: Suspended
+Publication identity: Publication identity
+were detected.: were detected.
+Full Name: Full Name
+The name of your site: The name of your site
+Scheduled: Scheduled
+Unpublish: Unpublish
+Add a Subscriber: Add a Subscriber
+An optional large background image for your site: An optional large background image for your site
+Hey there! It looks like you didn't save the changes you made.: Hey there! It looks like you didn't save the changes you made.
+Suspend: Suspend
+developer guide: developer guide
+Update: Update
+Twitter Description: Twitter Description
+Delete user: Delete user
+Have a website or blog other than this one? Link it!: Have a website or blog other than this one? Link it!
+Upload successful with: Upload successful with
+Publication logo: Publication logo
+Result: Result
+Sort by: Sort by
+You haven't written any stories yet!: You haven't written any stories yet!
+Send yourself a test email to make sure everything is working: Send yourself a test email to make sure everything is working
+Content: Content
+Suspend User: Suspend User
+Are you sure you want to un-suspend this user?: Are you sure you want to un-suspend this user?
+Updated failed: Updated failed
+Add a tag: Add a tag
+Newest: Newest
+Are you sure you want to suspend this user?: Are you sure you want to suspend this user?
+List: List
+Integrations: Integrations
+Permanently delete all posts and tags from the database, a hard reset: Permanently delete all posts and tags from the database, a hard reset
+Revert to draft: Revert to draft
+you can add translation files to your theme for: you can add translation files to your theme for
+Activation failed: Activation failed
+Title: Title
+Upload redirects JSON: Upload redirects JSON
+Location: Location
+Page: Page
+Warnings: Warnings
+Use the publish menu to re-schedule: Use the publish menu to re-schedule
+Save before you go!: Save before you go!
+Reset Password: Reset Password
+Draft posts: Draft posts
+Published: Published
+This user will be able to log in again and will have the same permissions they had previously.: This user will be able to log in again and will have the same permissions they had previously.
+expired: expired
+Twitter Profile: Twitter Profile
+Publish: Publish
+Webhook target URL...: Webhook target URL...
+Description: Description
+New: New
+Unscheduled: Unscheduled
+Edit Picture: Edit Picture
+Twitter Title: Twitter Title
+Download current routes.yml: Download current routes.yml
+Admin Integration: Admin Integration
+tag on every page of your blog: tag on every page of your blog
+Must-fix to activate theme: Must-fix to activate theme
+Explore a huge range of free and premium themes for Ghost with a range of design and layout options: Explore a huge range of free and premium themes for Ghost with a range of design and layout options
+will overwrite an existing theme of the same name. Are you sure?: will overwrite an existing theme of the same name. Are you sure?
+Event: Event
+WARNING: WARNING
+Maximum: Maximum
+Are you sure you want to transfer the ownership of this blog?: Are you sure you want to transfer the ownership of this blog?
+Very recommended to fix, functionality: Very recommended to fix, functionality
+Show all stories: Show all stories
+Add: Add
+Post Footer: Post Footer
+Reschedule: Reschedule
+Used in your theme, meta data and search results: Used in your theme, meta data and search results
+Beta features: Beta features
+uploaded successfully but some: uploaded successfully but some
+Team: Team
+Upload post image: Upload post image
+Webhook secret...: Webhook secret...
+The user will not have access to this blog anymore: The user will not have access to this blog anymore
