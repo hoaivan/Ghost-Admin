@@ -11,7 +11,7 @@ Recently updated: Mới cập nhật
 Draft posts: Bài viết nháp
 Published posts: Bài viết đã đăng
 Scheduled posts: Bài viết theo lịch
-Featured posts: Bài viết nổi bật
+Featured posts: Bài viết tiêu điểm
 Pages: Tất cả Trang
 Search tags: Tìm kiếm tag
 Search authors: Tìm kiếm tác giả
@@ -30,7 +30,7 @@ Settings: Tùy chỉnh
 Integrations: Tích hợp 
 Subscribers: Người đăng ký
 Stories: Tất cả bài viết 
-Team: Người dùng 
+Team: Thành viên
 Content: Nội dung
 Sign Out: Đăng xuất 
 Cancel: Hủy
@@ -58,18 +58,18 @@ Customise Open Graph data: Customise Open Graph data
 Code Injection: Nhúng mã
 Add styles/scripts to the header & footer: Thêm styles/scripts vào header & footer
 Turn this post into a page: Chuyển bài viết này thành một Trang
-Feature this post: Feature this post
+Feature this post: Bài viết tiêu điểm
 Delete Post: Xóa bài
 Back: Quay lại
 Meta Title: Meta Title
 Recommended: Đề xuất
-
-Administrator: Administrator
-Editor: Editor
-Author: Author
-Contributor: Contributor
+Administrator: Quản trị hệ thống
+Editor: Biên tập viên
+Author: Phóng viên
+Contributor: Phóng viên tự do
+Owner: Chủ báo
+Retry: Thử lại
 Admin Integration: Admin Integration
-
 characters. You’ve used: kí tự. Bạn đã sử dụng
 Meta Description: Meta Description
 Search Engine Result Preview: Xem trước kết quả tìm kiếm
@@ -85,7 +85,7 @@ Edit this post: Chỉnh sửa bài này
 Page: Trang
 Scheduled: Đã đặt lịch
 Draft: Nháp
-Featured: Nổi bật
+Featured: Tiêu điểm
 Will go live: Sẽ đăng
 Last edited: Chỉnh sửa lần cuối
 Ready to publish your post?: Bạn đã sãn sàng để đăng bài này?
@@ -133,7 +133,7 @@ Enable protection with simple shared password. All search engine optimization an
 A private RSS feed is available at: Nguồn cấp dữ liệu RSS riêng có sẵn tại
 Set the password for this site: Đặt mật khẩu cho trang này
 Team members: Thành viên
-Invite People: Thêm người dùng
+Invite People: Thêm thành viên
 Invited users: Người dùng đã được mời
 Invitation not sent - please try again: Lời mời chưa được gửi - hãy thử lại
 Invitation sent: Đã gửi lời mời
@@ -147,7 +147,7 @@ Suspended users: Người dùng bị vô hiệu
 Suspended: Đã vô hiệu
 User Actions: Hoạt động người dùng
 User Settings: Tùy chỉnh người dùng
-Make Owner: Làm chủ
+Make Owner: Làm chủ báo
 Delete User: Xóa người dùng
 Suspend User: Vô hiệu người dùng
 Un-suspend User: Hủy vô hiệu người dùng
@@ -193,7 +193,7 @@ Invite a New User: Mời người dùng mới
 Send invitation now: Gửi lời mời ngay
 Sent: Đã gửi
 Photo of: Ảnh của
-Last seen: Nhìn thấy lần cuối
+Last seen: Truy cập lần cuối
 Locked: Đã khóa
 This is a testing ground for experimental features which aren't quite ready for primetime. They may change, break or inexplicably disappear at any time: This is a testing ground for experimental features which aren't quite ready for primetime. They may change, break or inexplicably disappear at any time
 Migration options: Migration options
@@ -210,7 +210,7 @@ Delete: Xóa
 Testing tools: Testing tools
 Test email configuration: Test email configuration
 Send yourself a test email to make sure everything is working: Send yourself a test email to make sure everything is working
-Beta features: Beta features
+Beta features: Các tính năng thử nghiệm
 Public API: Public API
 For full instructions, read the: For full instructions, read the
 developer guide: developer guide
@@ -258,6 +258,21 @@ All user data will be deleted: Tất cả dữ liệu người dùng sẽ bị x
 Delete user and their posts: Xóa người dùng và bài viết của họ
 Delete user: Xóa người dùng
 Deleted: Đã xóa
+Updated: Đã cập nhật
+Saved: Đã lưu
+Unscheduled: Đã bỏ lịch
+Update failed: Cập nhật thất bại
+Saving failed: Lưu thất bại
+Scheduling failed: Đặt klic
+Publish failed: Đặt lịch thất bại
+Updated failed: Cập nhật thất bại
+Unscheduling failed: Đặt lịch thất bại
+Publishing: Đang đăng bài
+Updating: Đang cập nhật
+Rescheduling: Đang đặt lại lịch
+Schedule: Đặt lịch
+Unpublish: Đang hủy đăng
+Reschedule: Đặt lại lịch
 Save: Lưu
 Are you sure you want to leave this page?: Bạn có chắc chắn muốn rời khỏi trang này?
 Hey there! It looks like you didn't save the changes you made.: Có vẻ bạn chưa lưu lại những thay đổi mới.
@@ -364,10 +379,14 @@ Creating: Đang tạo
 Publish: Đăng bài
 Update: Cập nhật
 Old Password: Mật khẩu cũ
-Forgot: Forgot
-Create your account: Create your account
-Blog title: Blog title
-Full name: Full name
-Email address: Email address
-Last step: Last step
-Invite your team: Invite your team
+Forgot: Quên
+Create your account: Tạo tài khoản
+Blog title: Tiêu đề trang web
+Full name: Tên đầy đủ
+Email address: Địa chỉ email
+Last step: Bước cuối cùng
+Invite your team: Thêm thành viên
+Your timezone has been automatically set to: Múi giờ hiện tại là
+The local time here is currently: Thời gian địa phương hiện tại là
+Tweet @TryGhost!: Tweet @TryGhost!
+deprecated: deprecated

@@ -30,15 +30,16 @@
         {{#gh-form-group class="for-select" errors=errors hasValidated=hasValidated property="role"}}
             <label for="new-user-role">{{t "Role"}}</label>
             <span class="gh-select">
-                {{one-way-select
+                {{#one-way-select
                     id="new-user-role"
                     name="role"
                     options=(readonly roles)
                     optionValuePath="id"
                     optionLabelPath="name"
                     value=role
-                    update=(action "setRole")
-                }}
+                    update=(action "setRole") as |curRole|}}
+                    {{t (get curRole "name")}}
+                {{/one-way-select}}
                 {{svg-jar "arrow-down-small"}}
             </span>
             {{gh-error-message errors=errors property="role"}}

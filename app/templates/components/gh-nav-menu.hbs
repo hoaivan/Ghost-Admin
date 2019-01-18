@@ -9,12 +9,12 @@
     {{/dropdown.trigger}}
     {{#dropdown.content class="gh-nav-menu-dropdown"}}
         <ul class="dropdown-menu dropdown-triangle-top" role="menu" {{action dropdown.actions.close on="click" preventDefault=false}}>
-            <li role="presentation">{{#link-to "about" classNames="dropdown-item" role="menuitem" tabindex="-1" data-test-nav="about"}}{{svg-jar "store"}} {{t "About Ghost"}}{{/link-to}}</li>
-            <li class="divider"></li>
+            <!--<li role="presentation">{{#link-to "about" classNames="dropdown-item" role="menuitem" tabindex="-1" data-test-nav="about"}}{{svg-jar "store"}} {{t "About Ghost"}}{{/link-to}}</li>-->
+            <!--<li class="divider"></li>-->
             <li role="presentation">{{#link-to "team.user" session.user.slug classNames="dropdown-item" role="menuitem" tabindex="-1" data-test-nav="user-profile"}}{{svg-jar "user-circle"}} {{t "Your Profile"}}{{/link-to}}</li>
-            <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="https://docs.ghost.org/" target="_blank">{{svg-jar "ambulance"}} {{t "Support Center"}}</a></li>
-            <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="https://twitter.com/intent/tweet?text=%40TryGhost+Hi%21+Can+you+help+me+with+&related=TryGhost" target="_blank" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">{{svg-jar "twitter"}} {{t "Tweet @TryGhost!"}}</a></li>
-            <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="https://docs.ghost.org/faq/using-ghost/" target="_blank">{{svg-jar "book-open"}} {{t "How to Use Ghost"}}</a></li>
+            <!--<li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="https://docs.ghost.org/" target="_blank">{{svg-jar "ambulance"}} {{t "Support Center"}}</a></li>-->
+            <!--<li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="https://twitter.com/intent/tweet?text=%40TryGhost+Hi%21+Can+you+help+me+with+&related=TryGhost" target="_blank" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">{{svg-jar "twitter"}} {{t "Tweet @TryGhost!"}}</a></li>-->
+            <!--<li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="https://docs.ghost.org/faq/using-ghost/" target="_blank">{{svg-jar "book-open"}} {{t "How to Use Ghost"}}</a></li>-->
             <li class="divider"></li>
 
             {{#if showDropdownExtension}}
