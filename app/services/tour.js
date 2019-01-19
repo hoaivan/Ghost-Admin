@@ -47,20 +47,20 @@ export default Service.extend(Evented, {
 
         this.throbbers = [{
             id: 'getting-started',
-            title: 'Getting started with Ghost',
-            message: `This is your admin area! You'll find all of your content, users and settings right here. You can come back any time by visiting <a href="${adminUrl}" target="_blank">${adminDisplayUrl}</a>`
+            title: 'Chào mừng bạn đến với trang quản trị',
+            message: `Bạn có thể tìm thấy tất cả bài viết, thành viên cùng với các tùy chỉnh của bạn tại đây. Bạn có thể quay lại bất cứ lúc nào bằng cách truy cập <a href="${adminUrl}" target="_blank">${adminDisplayUrl}</a>`
         }, {
             id: 'using-the-editor',
-            title: 'Using the Ghost editor',
-            message: 'Ghost uses Markdown to allow you to write and format content quickly and easily. This toolbar also helps! Hit the <strong>?</strong> icon for more editor shortcuts.'
+            title: 'Sử dụng trình soạn thảo',
+            message: 'Trình soạn thảo sử dụng Markdown giúp việc soạn thảo trở nên thuận tiện dễ dàng hơn. Có thể sử dụng thanh công cụ này hoặc chọn biểu tượng <strong>?</strong> để tìm hiểu thêm các phím tắt được hỗ trợ của trình soạn thảo.'
         }, {
             id: 'static-post',
-            title: 'Turning posts into pages',
-            message: 'Static pages are permanent pieces of content which live outside of your usual stream of posts, for example an \'about\' or \'contact\' page.'
+            title: 'Chuyển bài viết thành Trang riêng',
+            message: 'Các trang có nội dung cố định nằm ngoài luồng các bài đăng thông thường của bạn, ví dụ như trang \'Về chúng tôi\' hay \'Liên hệ\'.'
         }, {
             id: 'featured-post',
-            title: 'Setting a featured post',
-            message: 'Depending on your theme, featured posts receive special styling to make them stand out as a particularly important or emphasised story.'
+            title: 'Thiết lập bài viết tiêu điểm',
+            message: 'Bài viết tiêu điểm sẽ hiển thị khác biệt với các bài viết thông thường như một tin quan trọng hay cần nhấn mạnh.'
         }, {
             id: 'upload-a-theme',
             title: 'Customising your publication',
