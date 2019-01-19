@@ -3,7 +3,7 @@
     <div class="gh-flow-content-wrap">
         <section class="gh-flow-content">
             <header>
-                <h1>Create your account</h1>
+                <h1>{{t "Create your account"}}</h1>
             </header>
 
             <form id="signup" class="gh-flow-create" method="post" novalidate="novalidate" {{action (perform submit) on="submit"}}>
@@ -14,7 +14,7 @@
                 {{gh-profile-image email=signupDetails.email setImage=(action "setImage")}}
 
                 {{#gh-form-group errors=signupDetails.errors hasValidated=signupDetails.hasValidated property="email"}}
-                    <label for="email">Email address</label>
+                    <label for="email">{{t "Email address"}}</label>
                     <span class="gh-input-icon gh-icon-mail">
                         {{svg-jar "email"}}
                         {{gh-text-input
@@ -31,7 +31,7 @@
                 {{/gh-form-group}}
 
                 {{#gh-form-group errors=signupDetails.errors hasValidated=signupDetails.hasValidated property="name"}}
-                    <label for="name">Full name</label>
+                    <label for="name">{{t "Full name"}}</label>
                     <span class="gh-input-icon gh-icon-user">
                         {{svg-jar "user-circle"}}
                         {{gh-trim-focus-input
@@ -50,7 +50,7 @@
                 {{/gh-form-group}}
 
                 {{#gh-form-group errors=signupDetails.errors hasValidated=signupDetails.hasValidated property="password"}}
-                    <label for="password">Password</label>
+                    <label for="password">{{t "Password"}}</label>
                     <span class="gh-input-icon gh-icon-lock">
                         {{svg-jar "lock"}}
                         {{gh-text-input
