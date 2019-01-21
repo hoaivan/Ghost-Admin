@@ -38,6 +38,7 @@ export default Route.extend(ApplicationRouteMixin, ShortcutsRoute, {
     tour: service(),
     ui: service(),
     intl: service(),
+    moment: service(),
 
     shortcuts,
 
@@ -45,6 +46,7 @@ export default Route.extend(ApplicationRouteMixin, ShortcutsRoute, {
 
     beforeModel() {
         this.intl.setLocale(['vi-vn', 'en-us']);
+        this.get('moment').setLocale('vi');
         return this.get('config').fetch();
     },
 

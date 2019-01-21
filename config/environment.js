@@ -34,7 +34,8 @@ module.exports = function (environment) {
         'ember-simple-auth': { },
 
         moment: {
-            includeTimezone: 'all'
+            includeTimezone: 'all',
+            includeLocales: true
         }
     };
 
