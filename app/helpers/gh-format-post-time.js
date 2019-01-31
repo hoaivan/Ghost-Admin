@@ -26,24 +26,24 @@ export default Helper.extend({
 
         // If scheduled for or published on the same day, render the time + Today
         if (time.isSame(now, 'day')) {
-            let formatted = time.format('HH:mm [Today]');
-            return scheduled ? `at ${formatted}` : formatted;
+            let formatted = time.format('HH:mm [Hôm nay]');
+            return scheduled ? `vào ${formatted}` : formatted;
         }
 
         // if published yesterday, render time + yesterday
         // This check comes before scheduled, because there are likely to be more published
         // posts than scheduled posts.
         if (published && time.isSame(now.clone().subtract(1, 'days').startOf('day'), 'day')) {
-            return time.format('HH:mm [Yesterday]');
+            return time.format('HH:mm [Hôm qua]');
         }
 
         // if scheduled for tomorrow, render the time + Tomorrow
         if (scheduled && time.isSame(now.clone().add(1, 'days').startOf('day'), 'day')) {
-            return time.format('[at] HH:mm [Tomorrow]');
+            return time.format('[vào] HH:mm [Ngày mai]');
         }
 
         // Else, render just the date if published, or the time & date if scheduled
-        let format = scheduled ? '[at] HH:mm [on] DD MMM YYYY' : 'DD MMM YYYY';
+        let format = scheduled ? '[vào] HH:mm [ngày] DD MMM YYYY' : 'DD MMM YYYY';
         return time.format(format);
     }
 });
