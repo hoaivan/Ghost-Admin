@@ -152,7 +152,7 @@ export default Component.extend({
         //         title: post.title,
         //         category: post.page ? 'Pages' : 'Stories'
         //     })));
-        let postsUrl = `${window.location.origin}/ghost/ext/search/${this.get('term')}`;
+        let postsUrl = `${window.location.origin}/ghost/ext/search/${encodeURIComponent(this.get('term'))}`;
         let content = this.get('content');
 
         return this.get('ajax').request(postsUrl).then((resp) => {
