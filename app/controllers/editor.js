@@ -327,6 +327,8 @@ export default Controller.extend({
             this.set('post.titleScratch', DEFAULT_TITLE);
         }
 
+        console.log('savepost', this.post);
+
         this.set('post.title', this.get('post.titleScratch'));
         this.set('post.customExcerpt', this.get('post.customExcerptScratch'));
         this.set('post.footerInjection', this.get('post.footerExcerptScratch'));
@@ -794,5 +796,4 @@ export default Controller.extend({
 
         notifications.showAlert(message, {type: 'error', delayed: delay, key: 'post.save'});
     }
-
 });
