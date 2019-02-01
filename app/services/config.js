@@ -2,6 +2,7 @@ import Ember from 'ember';
 import Service, {inject as service} from '@ember/service';
 import {assign} from '@ember/polyfills';
 import {computed} from '@ember/object';
+import config from 'ghost-admin/config/environment';
 
 // ember-cli-shims doesn't export _ProxyMixin
 const {_ProxyMixin} = Ember;
@@ -56,5 +57,14 @@ export default Service.extend(_ProxyMixin, {
             .replace(/\/?$/, '');
 
         return blogDomain;
+    }),
+
+    cbbCategories: computed(function () {
+        let keys = [];
+        for (let k in config.ccbCategories) {
+            keys.push(k);
+        }
+        return keys;
     })
+
 });
