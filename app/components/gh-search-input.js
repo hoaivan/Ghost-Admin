@@ -153,9 +153,10 @@ export default Component.extend({
         //         category: post.page ? 'Pages' : 'Stories'
         //     })));
         let postsUrl = `${window.location.origin}/ghost/ext/search/${encodeURIComponent(this.get('term'))}`;
+        let postsQuery = {_all: true};
         let content = this.get('content');
 
-        return this.get('ajax').request(postsUrl).then((resp) => {
+        return this.get('ajax').request(postsUrl, {data: postsQuery}).then((resp) => {
             if (resp.status) {
                 content.pushObjects(resp.data.map(post => ({
                     id: `post.${post.id}`,
