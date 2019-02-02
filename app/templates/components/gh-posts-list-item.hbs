@@ -18,6 +18,10 @@
         <span class="gh-content-status-featured gh-badge gh-badge-blue">{{t "Featured"}}</span>
     {{/if}}
 
+    {{#each  post.tags as |t| }}
+        <span class="gh-badge gh-badge-normal tag-{{@key}}">{{t.name}}</span>
+    {{/each}}
+
     {{#if (and isPublished (not post.page))}}
         <span class="gh-content-status-published">{{t "Published"}}</span>
     {{/if}}

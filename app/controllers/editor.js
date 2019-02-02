@@ -99,6 +99,7 @@ export default Controller.extend({
     showDeletePostModal: false,
     showLeaveEditorModal: false,
     showReAuthenticateModal: false,
+    _availableTags: null,
 
     // koenig related properties
     wordcount: null,
@@ -107,6 +108,9 @@ export default Controller.extend({
 
     // set by setPost and _postSaved, used in hasDirtyAttributes
     _previousTagNames: null,
+
+    selectedMainCategory: alias('post.selectedMainCategory'),
+    selectedSecondaryCategory: alias('post.selectedSecondaryCategory'),
 
     /* computed properties ---------------------------------------------------*/
 
@@ -144,6 +148,35 @@ export default Controller.extend({
 
     _canAutosave: computed('post.isDraft', function () {
         return config.environment !== 'test' && this.get('post.isDraft');
+    }),
+
+    mainCategories: computed(function (){
+        let keys = [];
+        for (let k in config.ccbCategories) {
+            keys.push(k);
+
+            // if (!this.get('post.selectedMainCategory')) {
+            //     this.set('post.selectedMainCategory', k);
+            // }
+        }
+
+        return keys;
+    }),
+
+    secondaryCategories: computed('post.selectedMainCategory', function () {
+        let arr = [];
+        let main = this.get('post.selectedMainCategory');
+
+        for (let k in config.ccbCategories) {
+            if (k === main) {
+                arr = config.ccbCategories[k];
+                // if (!this.get('post.selectedSecondaryCategory') && arr.length > 0) {
+                //     this.set('post.selectedSecondaryCategory', arr[0]);
+                // }
+                break;
+            }
+        }
+        return arr;
     }),
 
     /* actions ---------------------------------------------------------------*/
@@ -262,6 +295,14 @@ export default Controller.extend({
 
         updateWordCount(counts) {
             this.set('wordCount', counts);
+        },
+
+        selectMainCategory(c) {
+            this.set('post.selectedMainCategory', c);
+        },
+
+        selectSecondaryCategory(c) {
+            this.set('post.selectedSecondaryCategory', c);
         }
     },
 
@@ -327,8 +368,6 @@ export default Controller.extend({
             this.set('post.titleScratch', DEFAULT_TITLE);
         }
 
-        console.log('savepost', this.post);
-
         this.set('post.title', this.get('post.titleScratch'));
         this.set('post.customExcerpt', this.get('post.customExcerptScratch'));
         this.set('post.footerInjection', this.get('post.footerExcerptScratch'));
@@ -339,6 +378,9 @@ export default Controller.extend({
         this.set('post.ogDescription', this.get('post.ogDescriptionScratch'));
         this.set('post.twitterTitle', this.get('post.twitterTitleScratch'));
         this.set('post.twitterDescription', this.get('post.twitterDescriptionScratch'));
+
+        this.set('post.mainCategory', this.get('post.selectedMainCategory'));
+        this.set('post.secondaryCategory', this.get('post.selectedSecondaryCategory'));
 
         if (!this.get('post.slug')) {
             this.get('saveTitle').cancelAll();
@@ -517,6 +559,32 @@ export default Controller.extend({
         this.reset();
 
         this.set('post', post);
+
+        if (post.tags.currentState && post.tags.currentState.length >= 1) {
+            let main = post.tags.currentState[0].__data.slug;
+            let second = post.tags.currentState.length >= 2 ? post.tags.currentState[1].__data.slug : null;
+            let setSecond = false;
+            for (let k in config.ccbCategories) {
+                if (k === main) {
+                    this.set('post.selectedMainCategory', k);
+                    for (let k2 of config.ccbCategories[k]) {
+                        if (k2 === second) {
+                            this.set('post.selectedSecondaryCategory', k2);
+                            setSecond = true;
+                        }
+                    }
+                    break;
+                }
+            }
+            if (!setSecond) {
+                // reset secondary tag from other post
+                this.set('post.selectedSecondaryCategory', null);
+            }
+        } else {
+            let main = Object.keys(config.ccbCategories)[0];
+            this.set('post.selectedMainCategory', main);
+            this.set('post.selectedSecondaryCategory', config.ccbCategories[main].length > 0 ? config.ccbCategories[main][0] : null);
+        }
 
         // autofocus the editor if we have a new post
         this.set('shouldFocusEditor', post.get('isNew'));

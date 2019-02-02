@@ -1,4 +1,3 @@
-
 <div class="settings-menu-container">
     <div id="entry-controls">
         <div class="{{if isViewingSubview 'settings-menu-pane-out-left' 'settings-menu-pane-in'}} settings-menu settings-menu-pane">
@@ -67,28 +66,12 @@
                     }}
                 </div>
 
-                {{!-- {{#unless session.user.isContributor}} --}}
-                <div class="form-group">
-                    <label for="tag-input">{{t "Main Category"}}</label>
-                    <select onchange={{action "selectMainCategory" value="target.value"}}>
-                        {{#each mainCategories as |c|}}
-                            <option value="{{c}}">{{t c}}</option>
-                        {{/each}}
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="tag-input">{{t "Secondary Category"}}</label>
-                    <select>
-                        {{#each secondaryCategories as |c|}}
-                            <option value="{{c}}">{{t c}}</option>
-                        {{/each}}
-                    </select>
-                </div>
+                {{#unless session.user.isContributor}}
                 <div class="form-group">
                     <label for="tag-input">{{t "Tags"}}</label>
                     {{gh-psm-tags-input post=post triggerId="tag-input"}}
                 </div>
-                {{!-- {{/unless}} --}}
+                {{/unless}}
 
                 {{#gh-form-group errors=post.errors hasValidated=post.hasValidated property="customExcerpt"}}
                     <label for="custom-excerpt">{{t "Excerpt"}}</label>

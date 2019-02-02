@@ -53,3 +53,9 @@
     box-shadow: none;
     text-shadow: none;
 }
+
+.gh-badge-normal {
+    border: 1px solid #dddbdb;
+    background: transparent;
+    color: #555252;
+}

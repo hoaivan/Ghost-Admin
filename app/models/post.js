@@ -103,6 +103,9 @@ export default Model.extend(Comparable, ValidationEngine, {
     url: attr('string'),
     uuid: attr('string'),
 
+    mainCategory: attr('string'),
+    secondaryCategory: attr('string'),
+
     authors: hasMany('user', {
         embedded: 'always',
         async: false

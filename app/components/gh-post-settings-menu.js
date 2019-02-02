@@ -8,7 +8,6 @@ import {computed} from '@ember/object';
 import {run} from '@ember/runloop';
 import {inject as service} from '@ember/service';
 import {task, timeout} from 'ember-concurrency';
-import config from 'ghost-admin/config/environment'
 
 const PSM_ANIMATION_LENGTH = 400;
 
@@ -38,26 +37,12 @@ export default Component.extend(SettingsMenuMixin, {
     twitterTitleScratch: alias('post.twitterTitleScratch'),
     slugValue: boundOneWay('post.slug'),
 
-    secondaryCategories: alias('post.secondaryCategories'),
-
     facebookDescription: or('ogDescriptionScratch', 'customExcerptScratch', 'seoDescription'),
     facebookImage: or('post.ogImage', 'post.featureImage'),
     facebookTitle: or('ogTitleScratch', 'seoTitle'),
     twitterDescription: or('twitterDescriptionScratch', 'customExcerptScratch', 'seoDescription'),
     twitterImage: or('post.twitterImage', 'post.featureImage'),
     twitterTitle: or('twitterTitleScratch', 'seoTitle'),
-
-    init() {
-        this._super(...arguments);
-
-        for (let k in config.ccbCategories) {
-            if (this.selectedMainCategory == null) {
-                this.selectedMainCategory = k;
-                break;
-            }
-        }
-        this.setSecondaryCategories();
-    },
 
     seoTitle: computed('metaTitleScratch', 'post.titleScratch', function () {
         return this.metaTitleScratch || this.post.titleScratch || '(Untitled)';
@@ -502,11 +487,6 @@ export default Component.extend(SettingsMenuMixin, {
             if (this.get('deletePost')) {
                 this.get('deletePost')();
             }
-        },
-
-        selectMainCategory(c) {
-            this.selectedMainCategory = c;
-            this.setSecondaryCategories();
         }
     },
 
@@ -520,26 +500,5 @@ export default Component.extend(SettingsMenuMixin, {
         if (error) {
             this.get('notifications').showAPIError(error);
         }
-    },
-
-    selectedMainCategory: null,
-
-    mainCategories: computed(function(){
-        let keys = [];
-        for (let k in config.ccbCategories) {
-            keys.push(k);
-        }
-        return keys;
-    }),
-
-    setSecondaryCategories() {
-        let arr = [];
-        for (let k in config.ccbCategories) {
-            if (k == this.selectedMainCategory) {
-                arr = config.ccbCategories[k];
-                break;
-            }
-        }
-        this.set('secondaryCategories', arr);
     }
 });

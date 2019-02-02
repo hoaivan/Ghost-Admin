@@ -1,4 +1,5 @@
 import Component from '@ember/component';
+import config from 'ghost-admin/config/environment';
 import {computed} from '@ember/object';
 import {inject as service} from '@ember/service';
 import {sort} from '@ember/object/computed';
@@ -25,11 +26,27 @@ export default Component.extend({
 
     init() {
         this._super(...arguments);
+
         // perform a background query to fetch all users and set `availableTags`
         // to a live-query that will be immediately populated with what's in the
         // store and be updated when the above query returns
         this.store.query('tag', {limit: 'all'});
-        this.set('_availableTags', this.store.peekAll('tag'));
+        let tags = this.store.peekAll('tag');
+        tags = tags.filter((t) => {
+            for (let k in config.ccbCategories) {
+                if (k === t.slug) {
+                    return false;
+                }
+                for (let k2 of config.ccbCategories[k]) {
+                    if (k2 === t.slug) {
+                        return false;
+                    }
+                }
+            }
+            return t;
+        });
+
+        this.set('_availableTags', tags);
     },
 
     actions: {
