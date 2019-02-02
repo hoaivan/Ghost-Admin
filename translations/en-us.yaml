@@ -41,6 +41,7 @@ Send test notification: Send test notification
 Facebook Profile: Facebook Profile
 Webhook name...: Webhook name...
 Un-suspend User: Un-suspend User
+Un-suspend: Un-suspend
 Change Password: Change Password
 Website: Website
 Verify Password: Verify Password
@@ -322,6 +323,10 @@ were detected.: were detected.
 Full Name: Full Name
 The name of your site: The name of your site
 Scheduled: Scheduled
+Scheduling: Scheduling
+Rescheduled: Rescheduled
+Unschedule: Unschedule
+Unscheduling: Unscheduling
 Unpublish: Unpublish
 Add a Subscriber: Add a Subscriber
 An optional large background image for your site: An optional large background image for your site

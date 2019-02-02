@@ -31,6 +31,8 @@ export default Component.extend({
     contentExpiresAt: false,
     contentExpiry: 10000,
     currentSearch: '',
+    term: '',
+    isLoadingPost: false,
     isLoading: false,
     selection: null,
 
@@ -103,6 +105,11 @@ export default Component.extend({
         }
     },
 
+    _markLoading(status) {
+        this.set('isLoading', status);
+        this.set('isLoadingPost', status);
+    },
+
     refreshContent() {
         let promises = [];
         let now = new Date();
@@ -110,33 +117,56 @@ export default Component.extend({
         let contentExpiresAt = this.get('contentExpiresAt');
 
         if (this.get('isLoading') || contentExpiresAt > now) {
-            return RSVP.resolve();
+            if (this.get('isLoadingPost')) {
+                return RSVP.resolve();
+            }
+            let promises = [];
+            this.set('isLoadingPost', true);
+            promises.pushObject(this._loadPosts());
+            return RSVP.all(promises).then(() => { }).finally(() => {
+                this.set('isLoadingPost', false);
+            });
         }
 
-        this.set('isLoading', true);
+        this._markLoading(true);
         this.set('content', []);
         promises.pushObject(this._loadPosts());
         promises.pushObject(this._loadUsers());
         promises.pushObject(this._loadTags());
 
         return RSVP.all(promises).then(() => { }).finally(() => {
-            this.set('isLoading', false);
+            this._markLoading(false);
             this.set('contentExpiresAt', new Date(now.getTime() + contentExpiry));
         });
     },
 
     _loadPosts() {
-        let store = this.get('store');
-        let postsUrl = `${store.adapterFor('post').urlForQuery({}, 'post')}/`;
-        let postsQuery = {fields: 'id,title,page', limit: 'all', status: 'all', filter: 'page:[true,false]'};
+        // let store = this.get('store');
+        // let postsUrl = `${store.adapterFor('post').urlForQuery({}, 'post')}/`;
+        // let postsQuery = {fields: 'id,title,page', limit: 'all', status: 'all', filter: 'page:[true,false]'};
+        // let content = this.get('content');
+        //
+        // return this.get('ajax').request(postsUrl, {data: postsQuery}).then((posts) => {
+        //     content.pushObjects(posts.posts.map(post => ({
+        //         id: `post.${post.id}`,
+        //         title: post.title,
+        //         category: post.page ? 'Pages' : 'Stories'
+        //     })));
+        let postsUrl = `${window.location.origin}/ghost/ext/search/${encodeURIComponent(this.get('term'))}`;
+        let postsQuery = {_all: true};
         let content = this.get('content');
 
-        return this.get('ajax').request(postsUrl, {data: postsQuery}).then((posts) => {
-            content.pushObjects(posts.posts.map(post => ({
-                id: `post.${post.id}`,
-                title: post.title,
-                category: post.page ? 'Pages' : 'Stories'
-            })));
+        return this.get('ajax').request(postsUrl, {data: postsQuery}).then((resp) => {
+            if (resp.status) {
+                content.pushObjects(resp.data.map(post => ({
+                    id: `post.${post.id}`,
+                    title: post.content,
+                    slug: post.slug,
+                    category: Number(post.page) ? 'Pages' : 'Stories'
+                })));
+            } else {
+                this.get('notifications').showAPIError(resp);
+            }
         }).catch((error) => {
             this.get('notifications').showAPIError(error, {key: 'search.loadPosts.error'});
         });
@@ -180,7 +210,7 @@ export default Component.extend({
         if (isBlank(term)) {
             return resolve([]);
         }
-
+        this.set('term', term);
         this.refreshContent().then(() => {
             this.set('currentSearch', term);
 
