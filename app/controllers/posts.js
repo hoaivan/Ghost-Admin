@@ -1,4 +1,5 @@
 import Controller from '@ember/controller';
+import config from 'ghost-admin/config/environment';
 import {alias} from '@ember/object/computed';
 import {computed} from '@ember/object';
 import {get} from '@ember/object';
@@ -83,13 +84,59 @@ export default Controller.extend({
 
     availableTags: computed('_availableTags.[]', function () {
         let tags = this.get('_availableTags')
-            .filter(tag => tag.get('id') !== null)
-            .sort((tagA, tagB) => tagA.name.localeCompare(tagB.name, undefined, {ignorePunctuation: true}));
+            .filter(tag => tag.get('id') !== null);
+        //.sort((tagA, tagB) => tagA.name.localeCompare(tagB.name, undefined, {ignorePunctuation: true}))
+
         let options = tags.toArray();
 
-        options.unshiftObject({name: 'All tags', slug: null});
+        // separate main / secondary category
+        let options2 = [];
+        for (let opt of options) {
+            let opt2 = {
+                name: opt.name, slug: opt.slug, parent: null
+            };
+            for (let k in config.ccbCategories) {
+                for (let k2 of config.ccbCategories[k]) {
+                    if (k2 === opt.slug) {
+                        opt2.name = '-- ' + opt2.name;
+                        opt2.parent = k;
+                        break;
+                    }
+                }
+            }
+            options2.push(opt2);
+        }
 
-        return options;
+        // order
+        let options3 = [];
+        for (let k in config.ccbCategories) {
+            let main = options2.filter((v) => {
+                return v.slug === k ? v : false;
+            });
+            options3 = options3.concat(main);
+            for (let k2 of config.ccbCategories[k]) {
+                let second = options2.filter((v) => {
+                    return v.slug === k2 ? v : false;
+                });
+                options3 = options3.concat(second);
+            }
+        }
+
+        for (let opt of options2) {
+            let include = false;
+            for (let opt2 of options3) {
+                if (opt.slug === opt2.slug) {
+                    include = true;
+                    break;
+                }
+            }
+            if (!include) {
+                options3.push(opt);
+            }
+        }
+
+        options3.unshiftObject({name: 'All tags', slug: null});
+        return options3;
     }),
 
     selectedTag: computed('tag', '_availableTags.[]', function () {
