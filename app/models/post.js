@@ -105,6 +105,7 @@ export default Model.extend(Comparable, ValidationEngine, {
 
     mainCategory: attr('string'),
     secondaryCategory: attr('string'),
+    choDuyet: attr('string'),
 
     authors: hasMany('user', {
         embedded: 'always',

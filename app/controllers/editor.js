@@ -426,6 +426,116 @@ export default Controller.extend({
         }
     }).group('saveTasks'),
 
+    approve: task(function* (options = {}) {
+        console.log('approve');
+        this.set('post.choDuyet', '1');
+
+        let prevStatus = this.get('post.status');
+        let isNew = this.get('post.isNew');
+        let status;
+
+        this.send('cancelAutosave');
+
+        if (options.backgroundSave && !this.get('hasDirtyAttributes')) {
+            return;
+        }
+
+        if (options.backgroundSave) {
+            // do not allow a post's status to be set to published by a background save
+            status = 'draft';
+        } else {
+            if (this.get('post.pastScheduledTime')) {
+                status = (!this.get('willSchedule') && !this.get('willPublish')) ? 'draft' : 'published';
+            } else {
+                if (this.get('willPublish') && !this.get('post.isScheduled')) {
+                    status = 'published';
+                } else if (this.get('willSchedule') && !this.get('post.isPublished')) {
+                    status = 'scheduled';
+                } else {
+                    status = 'draft';
+                }
+            }
+        }
+
+        // ensure we remove any blank cards when performing a full save
+        if (!options.backgroundSave) {
+            if (this._koenig) {
+                this._koenig.cleanup();
+                this.set('hasDirtyAttributes', true);
+            }
+        }
+
+        // Set the properties that are indirected
+        // set mobiledoc equal to what's in the editor but create a copy so that
+        // nested objects/arrays don't keep references which can mean that both
+        // scratch and mobiledoc get updated simultaneously
+        this.set('post.mobiledoc', copy(this.get('post.scratch'), true));
+        this.set('post.status', status);
+
+        // Set a default title
+        if (!this.get('post.titleScratch').trim()) {
+            this.set('post.titleScratch', DEFAULT_TITLE);
+        }
+
+        this.set('post.title', this.get('post.titleScratch'));
+        this.set('post.customExcerpt', this.get('post.customExcerptScratch'));
+        this.set('post.footerInjection', this.get('post.footerExcerptScratch'));
+        this.set('post.headerInjection', this.get('post.headerExcerptScratch'));
+        this.set('post.metaTitle', this.get('post.metaTitleScratch'));
+        this.set('post.metaDescription', this.get('post.metaDescriptionScratch'));
+        this.set('post.ogTitle', this.get('post.ogTitleScratch'));
+        this.set('post.ogDescription', this.get('post.ogDescriptionScratch'));
+        this.set('post.twitterTitle', this.get('post.twitterTitleScratch'));
+        this.set('post.twitterDescription', this.get('post.twitterDescriptionScratch'));
+
+        this.set('post.mainCategory', this.get('post.selectedMainCategory'));
+
+        this.set('post.secondaryCategory', this.get('post.selectedSecondaryCategory'));
+
+        if (!this.get('post.slug')) {
+            this.get('saveTitle').cancelAll();
+
+            yield this.get('generateSlug').perform();
+        }
+
+        try {
+            let post = yield this.get('post').save(options);
+
+            if (!options.silent) {
+                this._showSaveNotification(prevStatus, post.get('status'), isNew ? true : false);
+            }
+
+            this.get('post').set('statusScratch', null);
+
+            // redirect to edit route if saving a new record
+            if (isNew && post.get('id')) {
+                if (!this.get('leaveEditorTransition')) {
+                    this.replaceRoute('editor.edit', post);
+                }
+                return true;
+            }
+
+            return post;
+        } catch (error) {
+            // re-throw if we have a general server error
+            if (error && !isInvalidError(error)) {
+                this.send('error', error);
+                return;
+            }
+
+            this.set('post.status', prevStatus);
+
+            if (!options.silent) {
+                let errorOrMessages = error || this.get('post.errors.messages');
+                this._showErrorAlert(prevStatus, this.get('post.status'), errorOrMessages);
+                // simulate a validation error for upstream tasks
+                throw undefined;
+            }
+
+            return this.get('post');
+        }
+    }).group('saveTasks'),
+
     /*
      * triggered by a user manually changing slug
      */
