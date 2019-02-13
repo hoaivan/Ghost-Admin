@@ -19,7 +19,7 @@
     {{/if}}
 
     {{#each  post.tags as |t| }}
-        <span class="gh-badge gh-badge-normal tag-{{@key}}">{{t.name}}</span>
+        <span class="gh-badge gh-badge-normal tag-{{t.slug}}">{{t.name}}</span>
     {{/each}}
 
     {{#if (and isPublished (not post.page))}}
@@ -36,3 +36,11 @@
         {{t "Last edited"}} {{gh-format-post-time post.updatedAtUTC draft=true}}
     {{/if}}
 </section>
+
+<style>
+    .tag-cho-duyet {
+        border: 1px solid #dc4e30;
+        background: linear-gradient(#f0674a,#e65030);
+        color: white;
+    }
+</style>

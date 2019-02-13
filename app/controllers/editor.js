@@ -363,6 +363,14 @@ export default Controller.extend({
         this.set('post.mobiledoc', copy(this.get('post.scratch'), true));
         this.set('post.status', status);
 
+        // remove tag cho-duyet when publish post
+        if (status == 'published') {
+            let post = this.get('post');
+            let tags = post.get('tags');
+            let oldTags = tags.filterBy('slug', 'cho-duyet');
+            tags.removeObjects(oldTags);
+        }
+
         // Set a default title
         if (!this.get('post.titleScratch').trim()) {
             this.set('post.titleScratch', DEFAULT_TITLE);

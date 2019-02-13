@@ -59,6 +59,9 @@
     position: relative;
     z-index: 1000;
 }
+.contributor-approve-button {
+    margin-left: 5px;
+}
 
 .post-settings {
     position: relative;
