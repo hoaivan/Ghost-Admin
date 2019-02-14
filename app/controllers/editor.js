@@ -364,7 +364,7 @@ export default Controller.extend({
         this.set('post.status', status);
 
         // remove tag cho-duyet when publish post
-        if (status == 'published') {
+        if (status === 'published') {
             let post = this.get('post');
             let tags = post.get('tags');
             let oldTags = tags.filterBy('slug', 'cho-duyet');
@@ -435,7 +435,6 @@ export default Controller.extend({
     }).group('saveTasks'),
 
     approve: task(function* (options = {}) {
-        console.log('approve');
         this.set('post.choDuyet', '1');
 
         let prevStatus = this.get('post.status');
