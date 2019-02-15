@@ -91,11 +91,7 @@ module.exports = function (environment) {
                 "bao-thang-quoc-te"
             ],
             "ky-niem-hoi": [],
-            "cong-tac-hoi": [
-                "cong-tac-hoi-hoat-dong-hoi",
-                "cong-tac-hoi-ccb-tieu-bieu",
-                "cong-tac-hoi-y-kien-hoi-vien",
-                "cong-tac-hoi-hoi-cac-cap"
+            "cuu-chien-binh": [
             ],
             "chinh-sach": [
                 "chinh-sach-van-ban-moi",
