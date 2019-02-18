@@ -53,7 +53,8 @@ module.exports = function (environment) {
             ],
             "kinh-te-xa-hoi": [
                 "kinh-te-xa-hoi-kinh-te",
-                "kinh-te-xa-hoi-xa-hoi"
+                "kinh-te-xa-hoi-xa-hoi",
+                "kinh-te-xa-hoi-nguoi-tot-viec-tot"
             ],
             "suc-khoe": [
             ],
