@@ -100,7 +100,7 @@ export default Component.extend({
 
         search(term) {
             return new RSVP.Promise((resolve, reject) => {
-                run.debounce(this, this._performSearch, term, resolve, reject, 200);
+                run.debounce(this, this._performSearch, term, resolve, reject, 1000);
             });
         }
     },
@@ -108,6 +108,13 @@ export default Component.extend({
     _markLoading(status) {
         this.set('isLoading', status);
         this.set('isLoadingPost', status);
+    },
+
+    _clear_posts() {
+        if (this.get('content')) {
+            let ct = this.get('content').filter((item) => item.category !== 'Pages' && item.category !== 'Stories');
+            this.set('content', ct);
+        }
     },
 
     refreshContent() {
@@ -120,6 +127,7 @@ export default Component.extend({
             if (this.get('isLoadingPost')) {
                 return RSVP.resolve();
             }
+            this._clear_posts();
             let promises = [];
             this.set('isLoadingPost', true);
             promises.pushObject(this._loadPosts());
