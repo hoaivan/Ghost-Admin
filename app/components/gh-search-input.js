@@ -15,7 +15,9 @@ export function computedGroup(category) {
 
         return this.get('content').filter((item) => {
             let search = this.get('currentSearch').toString().toLowerCase();
-
+            if (category === 'Stories' || category === 'Pages') {
+                return (item.category === category);
+            }
             return (item.category === category) && (item.title.toString().toLowerCase().indexOf(search) >= 0);
         });
     });
