@@ -44,6 +44,9 @@ module.exports = function (environment) {
             "chinh-tri": [
             ],
             "cuu-chien-binh": [
+                "cuu-chien-binh-tren-tran-tuyen-moi",
+                "cuu-chien-binh-ccb-khoi-nghiep",
+                "cuu-chien-binh-doanh-nhan-ccb"
             ],
             "chinh-sach": [
             ],
