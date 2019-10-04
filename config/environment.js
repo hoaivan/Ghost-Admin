@@ -45,8 +45,13 @@ module.exports = function (environment) {
             ],
             "cuu-chien-binh": [
                 "cuu-chien-binh-tren-tran-tuyen-moi",
-                "cuu-chien-binh-ccb-khoi-nghiep",
-                "cuu-chien-binh-doanh-nhan-ccb"
+                "cuu-chien-binh-vac-tu-va",
+                "cuu-chien-binh-cong-tac-hoi"
+            ],
+            "doanh-nhan-ccb": [
+                "doanh-nhan-ccb-khoi-nghiep",
+                "doanh-nhan-ccb-la-lanh-dum-la-rach",
+                "doanh-nhan-ccb-chinh-sach-moi"
             ],
             "chinh-sach": [
             ],
